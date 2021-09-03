@@ -58,16 +58,16 @@ public class Main {
 //                sc.close();
 //            }
 //-----------------------------------
-//            public static void main(String[] args) {
-//                //put your code here
-//                Scanner sc = new Scanner(System.in);
-//                String x = sc.nextLine();
-//                String z = sc.nextLine();
-//                String m = sc.next();
-//
-//                System.out.println("Привет," + " " + x + "," + " " + "это твой помощник" + " " + z + ".");
-//                System.out.println("У тебя "  + m + " " + "новых писем.");
-//                sc.close();
-//            }
+            public static void main(String[] args) {
+                //put your code here
+                Scanner sc = new Scanner(System.in);
+                String x = sc.nextLine();
+                String z = sc.nextLine();
+                String m = sc.next();
+
+                System.out.println("Привет," + " " + x + "," + " " + "это твой помощник" + " " + z + ".");
+                System.out.println("У тебя "  + m + " " + "новых писем.");
+                sc.close();
+            }
 
 }
