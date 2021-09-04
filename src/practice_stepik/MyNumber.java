@@ -152,13 +152,20 @@ public class MyNumber {
    // Выведите текущее время в формате ЧЧ:ММ:СС.
     //Примечание 1. Используйте 24-часовой формат.
 
-                public static void main(String[] args) {
-                      Scanner sc = new Scanner(System.in);
-                      int x = sc.nextInt();
-                      int h =  (x % 86400 ) / 3600   ;
-                      int m = ((x % 86400 ) % 3600 ) / 60;
-                      int s =((x % 86400 ) % 3600 ) % 60;
-                    System.out.format("%02d:%02d:%02d", h, m, s);
-                    sc.close();
-              }
+//                public static void main(String[] args) {
+//                      Scanner sc = new Scanner(System.in);
+//                      int x = sc.nextInt();
+//                      int h =  (x % 86400 ) / 3600   ;
+//                      int m = ((x % 86400 ) % 3600 ) / 60;
+//                      int s =((x % 86400 ) % 3600 ) % 60;
+//                    System.out.format("%02d:%02d:%02d", h, m, s);
+//                    sc.close();
+//              }
+
+// --------------------------------------------------------------------------------------------------------
+//    тема - инкременты
+
+
+
+
 }
