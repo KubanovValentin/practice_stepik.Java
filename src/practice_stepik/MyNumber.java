@@ -8,6 +8,7 @@ public class MyNumber {
 //        // put your code here
 //        int myVar = 5;
 //        System.out.print(myVar);
+//        sc.close();
 //    }
 //    ----------------------------------------
 //сложение
@@ -17,6 +18,7 @@ public class MyNumber {
 //        int sum2 = sum1 + 66;
 //        int sum3 = sum2 + sum2;
 //        System.out.print(sum3);
+//        sc.close();
 //    }
 //    -------------------------
 //вычитание
@@ -26,6 +28,7 @@ public class MyNumber {
 //        int sum2 = sum1 - 5;
 //        int sum3 = sum1 - sum2;
 //        System.out.print(sum3);
+    //        sc.close();
 //    }
 // -------------------------
 //    public static void main(String[] args) {
@@ -33,6 +36,7 @@ public class MyNumber {
 //        // put your code here
 //        int myVar = x + y ;
 //        System.out.print(myVar);
+    //        sc.close();
 //    }
 //___________________________
 //программа, которая получает два целых числа и выводит их сумму. 8 11
@@ -43,6 +47,7 @@ public class MyNumber {
 //        // put your code here
 //        int myVar = x + y ;
 //        System.out.print(myVar);
+    //        sc.close();
 //    }
 //    _____________________________
 //умножение
@@ -52,6 +57,7 @@ public class MyNumber {
 //        int num2 = num1 * 10;
 //        int num3 = num1 * num2;
 //        System.out.print(num3);
+    //        sc.close();
 //    }
 //    -------------------------
 //деление
@@ -61,6 +67,7 @@ public class MyNumber {
 //        int num2 = num1 / 2;
 //        int num3 = num1 / num2;
 //        System.out.print(num3);
+    //        sc.close();
 //    }
 //    -------------------------
     //На вход подаются два положительных действительных числа 5 10 - стороны прямоугольника.
@@ -73,6 +80,7 @@ public class MyNumber {
 //        double myVarP = (a + b) * 2;
 //        System.out.println(myVarS);
 //        System.out.println(myVarP);
+    //        sc.close();
 //    }
 //    ------------------------------
 //
@@ -81,15 +89,76 @@ public class MyNumber {
 //        double x = sc.nextDouble();
 //        double myVar = (5 * (x * x)) + (2 * x) + 11;
 //        System.out.print(myVar);
+    //        sc.close();
 //    }
 
 //    ---------------------------------
 //На вход подаётся целое число n. Выведите в одной строке через пробел само число, его квадрат и куб.
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        int myVarS = n * n;
-        int myVarC= n * n * n;
-        System.out.println(n + " " + myVarS + " " + myVarC);
-    }
+//    public static void main(String[] args) {
+//        Scanner sc = new Scanner(System.in);
+//        int n = sc.nextInt();
+//        int myVarS = n * n;
+//        int myVarC= n * n * n;
+//        System.out.println(n + " " + myVarS + " " + myVarC);
+//        sc.close();
+//    }
+//________________________________
+  //На вход подаётся три числа. Выведите на одной строке их среднее арифметическое.
+//      public static void main(String[] args) {
+//          Scanner sc = new Scanner(System.in);
+//          double x = sc.nextDouble();
+//          double y = sc.nextDouble();
+//          double z = sc.nextDouble();
+//          double myVar = (x + y + z) / 3;
+//          System.out.print(myVar);
+//        sc.close();
+//      }
+//    ________________________________________
+// Завершите программу таким образом, чтобы она выводила на печать остаток от деления 41 на 7.
+//          public static void main(String[] args) {
+//              int x = 41; int y = 7;
+//              int myVar = x % y;
+//              // put your code here
+//              System.out.print(myVar);
+//        sc.close();
+//          }
+//    ______________________________
+ //На вход подаётся целое число. Найдите его последнюю цифру.Для вычислений может понадобиться метод Math.abs(x)
+//          public static void main(String[] args) {
+//              Scanner sc = new Scanner(System.in);
+//              int x = sc.nextInt();
+//              System.out.print(Math.abs(x % 10));
+//        sc.close();
+//          }
+//----------------------------------------------------------
+//     ООО "Круче Гугла" нанимает Java-разработчиков.
+//     Месячный бюджет на зарплату разработчиков - X, зарплата одного разработчика - Y.
+//     Выведите на печать в одной строке через пробел,
+//     какое максимальное количество разработчиков компания сможет нанять,
+//     и какое количество денег из ежемесячного бюджета останется неиспользованным.
+//            public static void main(String[] args) {
+//                Scanner sc = new Scanner(System.in);
+//                int x = sc.nextInt();
+//                int y = sc.nextInt();
+//                int n = x / y;
+//                int b = x % y;
+//                System.out.println(n + " " + b);
+//                sc.close();
+//            }
+//  ______________________________________________
+
+   // Реализуйте простые домашние часы.
+   // На вход подаётся число секунд, которое прошло с момента начала суток (00:00:00).
+   // Выведите текущее время в формате ЧЧ:ММ:СС.
+    //Примечание 1. Используйте 24-часовой формат.
+
+                public static void main(String[] args) {
+                      Scanner sc = new Scanner(System.in);
+                      int x = sc.nextInt();
+                      int h =  (x % 86400 ) / 3600   ;
+                      int m = ((x % 86400 ) % 3600 ) / 60;
+                      int s =((x % 86400 ) % 3600 ) % 60;
+                    System.out.format("%02d:%02d:%02d", h, m, s);
+                    sc.close();
+              }
 }
