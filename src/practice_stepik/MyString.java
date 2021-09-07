@@ -67,7 +67,7 @@ public class MyString {
 //        int x = str3.length();
 //        System.out.println(str3);
 //        System.out.println(x);
-
+//         sc.close();
 
 //---------------------------------------------
 //На вход подаются два числа.
@@ -80,7 +80,7 @@ public class MyString {
 //        String str2 = Integer.toString(y);
 //        System.out.println(z);
 //        System.out.println(str1 + str2);
-
+//         sc.close();
 //        _____________________________________
 //На вход подаются два слова на одной строке, разделённые пробелом.
 // Выведите true, если они идут по алфавиту, и false, если нет.
@@ -90,7 +90,7 @@ public class MyString {
         String str1 = sc.next();
         String str2 = sc.next();
         System.out.println(str1.charAt(0) < str2.charAt(0));
-
+        sc.close();
     }
 
 }
