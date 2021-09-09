@@ -117,5 +117,7 @@ public class condition_constructions {
         } else {
             System.out.println("NO");
         }
+
+
     }
 }
