@@ -56,28 +56,59 @@ public class logic_constructions {
 //-------------------------------------
 // На вход подаются целых три числа - день, месяц и год (по григорианскому календарю).
 // Выведите true, если эти числа составляют валидную дату, и false - в противном случае.
+//        Scanner sc = new Scanner(System.in);
+//        int DD= sc.nextInt();
+//        int MM = sc.nextInt();
+//        int YY= sc.nextInt();
+//
+//        if (YY%4==0 && YY%100 !=0 || YY%400==0
+//                && (DD>0 && DD<=29) && MM == 2) {
+//            System.out.print("true");
+//        } else if ((YY%4==0 && YY%100 !=0 || YY%400==0)&& (DD>0 && DD<=31) && !(MM % 2 == 0) && (MM>0 && MM<=12 && MM != 2)) {
+//            System.out.print("true");
+//        } else if ((YY%400==0 || YY%4==0 && YY%100 !=0) && (DD>0 && DD<=30) && (MM % 2 == 0) && (MM>0 && MM<=12 && MM != 2)){
+//            System.out.print("true");
+//        } else if ((YY>0 && YY<2023) && (MM>0 && MM<=12) && (MM != 2 ) && (MM%2==0 && DD>0 && DD<31)) {
+//            System.out.print("true");
+//        }else if ((YY>0 && YY<2023) && (MM>0 && MM<=12) && (MM != 2 ) && (!(MM%2==0) && DD>0 && DD<31)) {
+//            System.out.print("true");
+//        } else if ((YY>0 && YY<2023) && (MM == 2 && DD>0 && DD<29)){
+//            System.out.print("true");
+//        } else if (YY==1900 && MM==2 && DD==29) {
+//            System.out.print("true");
+//        } else {
+//            System.out.print("false");
+//        }
+//---------------------------------------------------------------------------
+// На вход подаются три слова на одной строке, разделённые пробелом.
+// Выведите их в алфавитном порядке.
+// Гарантируется, что слова начинаются с разных букв.
         Scanner sc = new Scanner(System.in);
-        int DD= sc.nextInt();
-        int MM = sc.nextInt();
-        int YY= sc.nextInt();
+        String str1 = sc.next();
+        String str2 = sc.next();
+        String str3 = sc.next();
+        char a = str1.charAt(0);
+        char b = str2.charAt(0);
+        char c = str3.charAt(0);
 
-        if (YY%4==0 && YY%100 !=0 || YY%400==0
-                && (DD>0 && DD<=29) && MM == 2) {
-            System.out.print("true");
-        } else if ((YY%4==0 && YY%100 !=0 || YY%400==0)&& (DD>0 && DD<=31) && !(MM % 2 == 0) && (MM>0 && MM<=12 && MM != 2)) {
-            System.out.print("true");
-        } else if ((YY%400==0 || YY%4==0 && YY%100 !=0) && (DD>0 && DD<=30) && (MM % 2 == 0) && (MM>0 && MM<=12 && MM != 2)){
-            System.out.print("true");
-        } else if ((YY>0 && YY<2023) && (MM>0 && MM<=12) && (MM != 2 ) && (MM%2==0 && DD>0 && DD<31)) {
-            System.out.print("true");
-        }else if ((YY>0 && YY<2023) && (MM>0 && MM<=12) && (MM != 2 ) && (!(MM%2==0) && DD>0 && DD<31)) {
-            System.out.print("true");
-        } else if ((YY>0 && YY<2023) && (MM == 2 && DD>0 && DD<29)){
-            System.out.print("true");
-        } else if (YY==1900 && MM==2 && DD==29) {
-            System.out.print("true");
-        } else {
-            System.out.print("false");
-        }
+        char x;
+
+        if (a > b) {
+            x = a; a = b; b = x;
+
+        } else a = a;
+        if (b > c) {
+            x = b; b = c; c = x;
+        } else b=b;
+        if (a > b) {
+            x = a; a = b; b = x;
+        } else c = c;
+
+        System.out.println(a);
+        System.out.println(b);
+        System.out.println(c);
+
+// -----------------------------------------------------------
     }
 }
+
