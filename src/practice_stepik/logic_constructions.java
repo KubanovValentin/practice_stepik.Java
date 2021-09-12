@@ -91,23 +91,39 @@ public class logic_constructions {
 //        char b = str2.charAt(0);
 //        char c = str3.charAt(0);
 //
-//        char x;
-//
-//        if (a > b) {
-//            x = a; a = b; b = x;
-//
-//        } else a = a;
-//        if (b > c) {
-//            x = b; b = c; c = x;
-//        } else b=b;
-//        if (a > b) {
-//            x = a; a = b; b = x;
-//        } else c = c;
-//
-//        System.out.println(a);
-//        System.out.println(b);
-//        System.out.println(c);
-//        не решенные задачи 3.3 последние 2
+//        if(a<=b){
+//            if(b<=c) {
+//                System.out.println(str1);
+//                System.out.println(str2);
+//                System.out.println(str3);
+//            }else {
+//                if(a<=c){
+//                    System.out.println(str1);
+//                    System.out.println(str3);
+//                    System.out.println(str2);
+//                }else {
+//                    System.out.println(str3);
+//                    System.out.println(str1);
+//                    System.out.println(str2);
+//                }
+//            }
+//        }else {
+//            if(c<=b){
+//                System.out.println(str3);
+//                System.out.println(str2);
+//                System.out.println(str1);
+//            }else {
+//                if (a<=c){
+//                    System.out.println(str2);
+//                    System.out.println(str1);
+//                    System.out.println(str3);
+//                }else {
+//                    System.out.println(str2);
+//                    System.out.println(str3);
+//                    System.out.println(str1);
+//                }
+//            }
+//        }
 
 // -----------------------------------------------------------
 // Исправьте программу таким образом, чтобы она вывела на печать "Ура, заработало!!!" (без кавычек).
@@ -170,30 +186,124 @@ public class logic_constructions {
 // Разработчики решили объявить забастовку,
 // если разница максимальной и минимальной зарплаты превысит определённый уровень.
 // Определите, грозит ли ООО "Круче Гугла" забастовка.
-        Scanner sc = new Scanner(System.in);
-        int pay1 = sc.nextInt();
-        int pay2 = sc.nextInt();
-        int pay3 = sc.nextInt();
-        int sum1=pay2-pay1;
-        int sum2=pay1-pay2;
-        int sum3=pay3-pay2;
-        int sum4=pay2-pay3;
-        int sum5=pay3-pay1;
-        int sum6=pay1-pay3;
-            if (sum1<=100 && sum2<=100 && sum3<=100 && sum4<=100 &&sum5<=100 && sum6<=100){
-                System.out.println("За работу, Солнце ещё высоко");
-            } else if (sum1>100 || sum2>100 || sum3>100 || sum4>100 ||sum5>100 || sum6>100){
-                System.out.println("Ура, бастуем!");
-        }
-//        if((pay1-pay2)>100 && (pay2-pay1)>100
-//                && (pay2-pay3)>100 && (pay3-pay2)>100
-//                && (pay1-pay3)>100 && (pay3-pay1)>100){
-//            System.out.println("Ура, бастуем!");
-//        }else if ((pay1-pay2)<=100 && (pay2-pay1)<=100
-//                && (pay2-pay3)<=100 && (pay3-pay2)<=100
-//                && (pay1-pay3)<=100 && (pay3-pay1)<=100){
-//            System.out.println("За работу, Солнце ещё высоко");
+//        Scanner sc = new Scanner(System.in);
+//        int pay1 = sc.nextInt();
+//        int pay2 = sc.nextInt();
+//        int pay3 = sc.nextInt();
+//        int raz =  sc.nextInt();
+//        int sum1=pay2-pay1;
+//        int sum2=pay1-pay2;
+//        int sum3=pay3-pay2;
+//        int sum4=pay2-pay3;
+//        int sum5=pay3-pay1;
+//        int sum6=pay1-pay3;
+//            if (sum1<=raz && sum2<=raz && sum3<=raz && sum4<=raz &&sum5<=raz && sum6<=raz){
+//                System.out.println("За работу, Солнце ещё высоко");
+//            } else if (sum1>raz || sum2>raz || sum3>raz || sum4>raz ||sum5>raz || sum6>raz){
+//                System.out.println("Ура, бастуем!");
 //        }
+//-------------------------------------------------
+// На вход подаётся три целых числа.
+// Выведите максимальное чётное из них. Если чётных чисел нет, выведите "Чётных чисел нет".
+//        Scanner sc = new Scanner(System.in);
+//        int a = sc.nextInt();
+//        int b = sc.nextInt();
+//        int c = sc.nextInt();
+//
+//        if(a<=b){
+//            if(b<=c){
+//                if(c%2==0){
+//                    System.out.println(c);
+//                }else if (b%2==0) {
+//                    System.out.println(b);
+//                }else if (a%2==0) {
+//                    System.out.println(a);
+//                }else {
+//                    System.out.println("Чётных чисел нет");
+//                }
+//            }else {
+//                if (a<=c) {
+//                     if (b%2==0) {
+//                        System.out.println(b);
+//                     }else if (c%2==0) {
+//                         System.out.println(c);
+//                     }else if (a%2==0) {
+//                         System.out.println(a);
+//                     }else {
+//                         System.out.println("Чётных чисел нет");
+//                     }
+//                }else {
+//                    if (b%2==0) {
+//                        System.out.println(b);
+//                    }else if (a%2==0) {
+//                        System.out.println(a);
+//                    }else if (c%2==0) {
+//                        System.out.println(c);
+//                    }else {
+//                        System.out.println("Чётных чисел нет");
+//                    }
+//                }
+//            }
+//        }else {
+//            if (c<=b){
+//                if (a%2==0) {
+//                    System.out.println(a);
+//                }else if (b%2==0) {
+//                    System.out.println(b);
+//                }else if (c%2==0) {
+//                    System.out.println(c);
+//                }else {
+//                    System.out.println("Чётных чисел нет");
+//                }
+//            }else {
+//                if (a<=c) {
+//                    if (c%2==0) {
+//                        System.out.println(c);
+//                    }else if (b%2==0) {
+//                        System.out.println(b);
+//                    }else if (a%2==0) {
+//                        System.out.println(a);
+//                    }else {
+//                        System.out.println("Чётных чисел нет");
+//                    }
+//                } else {
+//                    if (a%2==0) {
+//                        System.out.println(a);
+//                    }else if (c%2==0) {
+//                        System.out.println(c);
+//                    }else if (b%2==0) {
+//                        System.out.println(b);
+//                    }else {
+//                        System.out.println("Чётных чисел нет");
+//                    }
+//                }
+//            }
+//        }
+//        _____________________________________________________
+//        На вход подаются целых три числа - день, месяц и год (по григорианскому календарю).
+//        Выведите true, если эти числа составляют валидную дату, и false - в противном случае.
+
+                Scanner sc = new Scanner(System.in);
+                int day = sc.nextInt();
+                int mouth = sc.nextInt();
+                int year = sc.nextInt();
+                if ((day >= 1 && day <= 31) && (mouth >= 1 && mouth <= 12) && year >= 0) {
+                    if (day <= 31 && (mouth == 1 || mouth == 3 || mouth == 5 || mouth == 7 || mouth == 8 || mouth == 10 || mouth == 12)) {
+                        System.out.println("true");
+                    } else if (day == 29 && mouth != 2) {
+                        System.out.println("true");
+                    } else if (day <= 30 && (mouth == 4 || mouth == 6 || mouth == 9 || mouth == 11)) {
+                        System.out.println("true");
+                    } else if (day == 29 && mouth == 2 && (year % 4 == 0 || year % 400 == 0) && (year % 100 != 0)) {
+                        System.out.println("true");
+                    } else{
+                        System.out.println("false");
+                    }
+
+                } else {
+                    System.out.println("false");
+                }
+
     }
 }
 
