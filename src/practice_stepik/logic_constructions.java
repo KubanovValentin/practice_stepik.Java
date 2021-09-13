@@ -282,27 +282,57 @@ public class logic_constructions {
 //        _____________________________________________________
 //        На вход подаются целых три числа - день, месяц и год (по григорианскому календарю).
 //        Выведите true, если эти числа составляют валидную дату, и false - в противном случае.
-
-                Scanner sc = new Scanner(System.in);
-                int day = sc.nextInt();
-                int mouth = sc.nextInt();
-                int year = sc.nextInt();
-                if ((day >= 1 && day <= 31) && (mouth >= 1 && mouth <= 12) && year >= 0) {
-                    if (day <= 31 && (mouth == 1 || mouth == 3 || mouth == 5 || mouth == 7 || mouth == 8 || mouth == 10 || mouth == 12)) {
-                        System.out.println("true");
-                    } else if (day == 29 && mouth != 2) {
-                        System.out.println("true");
-                    } else if (day <= 30 && (mouth == 4 || mouth == 6 || mouth == 9 || mouth == 11)) {
-                        System.out.println("true");
-                    } else if (day == 29 && mouth == 2 && (year % 4 == 0 || year % 400 == 0) && (year % 100 != 0)) {
-                        System.out.println("true");
-                    } else{
-                        System.out.println("false");
-                    }
-
-                } else {
-                    System.out.println("false");
-                }
+//
+//                Scanner sc = new Scanner(System.in);
+//                int day = sc.nextInt();
+//                int mouth = sc.nextInt();
+//                int year = sc.nextInt();
+//                if ((day >= 1 && day <= 31) && (mouth >= 1 && mouth <= 12) && year >= 0) {
+//                    if (day <= 31 && (mouth == 1 || mouth == 3 || mouth == 5 || mouth == 7 || mouth == 8 || mouth == 10 || mouth == 12)) {
+//                        System.out.println("true");
+//                    } else if (day == 29 && mouth != 2) {
+//                        System.out.println("true");
+//                    } else if (day <= 30 && (mouth == 4 || mouth == 6 || mouth == 9 || mouth == 11)) {
+//                        System.out.println("true");
+//                    } else if (day == 29 && mouth == 2 && (year % 4 == 0 || year % 400 == 0) && (year % 100 != 0)) {
+//                        System.out.println("true");
+//                    } else{
+//                        System.out.println("false");
+//                    }
+//
+//                } else {
+//                    System.out.println("false");
+//                }
+//---------------------------------------------------------------------------------------------------------
+// На числовой прямой даны два отрезка.Напишите программу, которая находит их пересечение.
+        Scanner sc = new Scanner(System.in);
+        int a1 = sc.nextInt();
+        int b1 = sc.nextInt();
+        int a2 = sc.nextInt();
+        int b2 = sc.nextInt();
+        if (a1<b1 && a2<b2) {
+            if ((a1<a2 && a1<b2)&&(b1<a2 && b1<b2)|| (a1>a2 && a1>b2) && (b1>a2 && b1>b2)) {
+                System.out.println("Пересечения нет");
+            } else if ((a1<a2 && a1<b2) && (b1>a2 && b1>b2)){
+                System.out.println(a2 + " " + b2);
+            }else if ((a1>a2 && a1<b2) && (b1>a2 && b1<b2)) {
+                System.out.println(a1 + " " + b1);
+            }else if (a1==a2 && b1==b2) {
+                System.out.println(a1 + " " + b1);
+            }else if(a1<b2 && a1< b1 && b1==a2) {
+                System.out.println(a2);
+            }else if (a2<b1 && a2<a1 && a1==b2) {
+                System.out.println(a1);
+            }else if ((a1==a2 && a1<b1 && b1<b2) || (b1==b2 && a2<a1 && a1 < b1)){
+                System.out.println(a1 + " " + b1);
+            }else if((b1==b2 && a1<a2 && a2<b1) || (a1==a2 && b2<b1 && a1<b2 )) {
+                System.out.println(a2 + " " + b2);
+            }else if (a1<a2 && a2<b1 && b1<b2 && a1<b2){
+                System.out.println(a2 + " " + b1);
+            }else if (a2<a1 && a1<b2 && b2<b1 && a2<b1){
+                System.out.println(a1 + " " + b2);
+            }
+        }
 
     }
 }
