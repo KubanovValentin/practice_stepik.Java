@@ -1,5 +1,5 @@
 package practice_stepik;
-import java.util.Locale;
+//import java.util.Locale;
 import java.util.Scanner;
 public class test_condition_constructions {
     public static void main(String[] args){
@@ -99,9 +99,9 @@ public class test_condition_constructions {
 //-------------------------------------------------------------------------------
 // На вход подаётся два числа - a и b.
 // Выведите знак отношения между числами: один символ "<", если a < b, ">", если a > b и "=", если a=b.
-//        Scanner cs = new Scanner(System.in);
-//        double a = cs.nextDouble();
-//        double b = cs.nextDouble();
+//        Scanner sc = new Scanner(System.in);
+//        double a = sc.nextDouble();
+//        double b = sc.nextDouble();
 //        if(a>b){
 //            System.out.println(">");
 //        }else if(a<b){
@@ -110,5 +110,115 @@ public class test_condition_constructions {
 //            System.out.println("=");
 //        }
 // --------------------------------------------------------------------------------------
+// Выведите время года по введённому номеру месяца.
+// Если введён ошибочный номер месяца, выведите "error".
+//        Scanner sc = new Scanner(System.in);
+//        int x = sc.nextInt();
+//        switch (x) {
+//            case 1:
+//                System.out.println("Зима");
+//                break;
+//            case 2:
+//                System.out.println("Зима");
+//                break;
+//            case 3:
+//                System.out.println("Весна");
+//                break;
+//            case 4:
+//                System.out.println("Весна");
+//                break;
+//            case 5:
+//                System.out.println("Весна");
+//                break;
+//            case 6:
+//                System.out.println("Лето");
+//                break;
+//            case 7:
+//                System.out.println("Лето");
+//                break;
+//            case 8:
+//                System.out.println("Лето");
+//                break;
+//            case 9:
+//                System.out.println("Осень");
+//                break;
+//            case 10:
+//                System.out.println("Осень");
+//                break;
+//            case 11:
+//                System.out.println("Осень");
+//                break;
+//            case 12:
+//                System.out.println("Зима");
+//                break;
+//            default:
+//                System.out.println("error");
+//        }
+//        ---------------------------------------------------
+//        На вход подаются координаты точки x, y.
+//        Определите, попадает ли точка в заштрихованную область.Выведите "Yes", если попадает,
+//        и "No" - в противном случае.
+
+
+//        Scanner sc = new Scanner(System.in);
+//        double x = sc.nextDouble();
+//        double y = sc.nextDouble();
+//        if(x < 0 && x<=y && y<=2-x*x){
+//                System.out.println("YES");
+//        }else if (x>=0 && y>=0 && y<=2-x*x) {
+//                System.out.println("YES");
+//        }else{
+//            System.out.println("NO");
+//        }
+//        --------------------------------------------------------------
+//        Богатейшие люди Земли решили создать тайное мировое правительство
+//        ̶и̶ ̶у̶п̶р̶а̶в̶л̶я̶т̶ь̶ ̶п̶л̶а̶н̶е̶т̶о̶й̶,̶ ̶н̶е̶ ̶п̶р̶и̶в̶л̶е̶к̶а̶я̶ ̶в̶н̶и̶м̶а̶н̶и̶я̶ ̶с̶а̶н̶и̶т̶а̶р̶о̶в̶.
+//        В кабинет совещаний могут войти только те, кто указан в специальном
+//        списке: Джефф Безос, Илон Маск,  Марк Цукерберг, Билл Гейтс.
+//        Чтобы получить допуск, нужно сказать фразу-приветствие.
+//        Если фраза-приветствие содержит имя из списка, проход разрешается.
+//        Если же нет - проход блокируется.
+//        На ввод подаётся фраза-приветствие.
+//        Выведите "Добро пожаловать!", если имя есть в списке, и "Здесь никого нет,
+//        Вы ошиблись дверью" - если нет.
+//            Scanner sc = new Scanner(System.in);
+//            String mainStr = sc.nextLine();
+//            String name1 = "Джефф Безос";
+//            String name2 = "Илон Маск";
+//            String name3 = "Марк Цукерберг";
+//            String name4 = "Билл Гейтс";
+//            if (mainStr.contains(name1)==true
+//                    || mainStr.contains(name2)==true
+//                        || mainStr.contains(name3)==true
+//                            ||mainStr.contains(name4)==true){
+//                System.out.println("Добро пожаловать!");
+//            }else {
+//                System.out.println("Здесь никого нет, Вы ошиблись дверью");
+//            }
+//        ------------------------------------------------
+//        На вход подаётся слово.
+//        Выведите словами количество букв в этом слове.
+//        Если букв больше пяти - выведите "Длинное слово".
+
+        Scanner sc = new Scanner(System.in);
+        String str = sc.nextLine();
+        int x = str.length();
+        if (x>0 && x<6) {
+            if(x==1) {
+                System.out.println("Одна буква");
+            }else if(x==2) {
+                System.out.println("Две буквы");
+            }else if(x==3) {
+                System.out.println("Три буквы");
+            }else if(x==4) {
+                System.out.println("Четыре буквы");
+            }else if(x==5) {
+                System.out.println("Пять букв");
+            }
+        }else {
+            System.out.println("Длинное слово");
+        }
+
+
     }
 }
