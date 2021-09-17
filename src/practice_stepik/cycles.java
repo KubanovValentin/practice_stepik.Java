@@ -2,6 +2,9 @@ package practice_stepik;
 import java.util.Scanner;
 public class cycles {
     public static void main(String[] args) {
+
+
+//   -----------------------------------while---------------------------------------
 //        int x = 3;
 //
 //        while (x > 0) {
@@ -187,16 +190,35 @@ public class cycles {
 // ----------------------------------------------------------
 // На вход подаётся натуральное число.
 // Выведите на печать составляющие его цифры в обратном порядке.
-        Scanner sc = new Scanner(System.in);
-        int a = sc.nextInt();
-        int n = a%10;
-        int c = 1;
-        while(c>0){
-            c =(a/10)%10;
-            System.out.println(n);
-            System.out.println(c);
 
-        }
+//        Scanner sc = new Scanner(System.in);
+//        String str = sc.nextLine();
+//        StringBuffer buffer = new StringBuffer(str);
+//        buffer.reverse();
+//        System.out.println(buffer);
+
+
+//-------------------------------------------------------
+// На вход подаётся строка с двумя буквами, а затем - строка, состоящая из слов.
+// Выведите на печать все слова, которые начинаются на буквы,
+// идущие по алфавиту между буквами с первой строки (включительно).
+// Вывести слова необходимо в том же порядке, в котором они подаются на вход.
+
+//        Scanner sc = new Scanner(System.in);
+//        String s1 = sc.next();
+//        String s2 = sc.next();
+//
+//         while (sc.hasNext()) {
+//             String str = sc.next();
+//             if (s1.charAt(0) <= str.charAt(0) && str.charAt(0) <= s2.charAt(0)) {
+//                 System.out.println(str);
+//             }
+//        }
+
+
+//--------------------------------------- циклы for -----------------------------
+
+
 
     }
 }
