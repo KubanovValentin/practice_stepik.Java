@@ -282,20 +282,20 @@ public class cycles {
 // Пусть нам дана строка, буквы которой мы хотим распечатать по следующему правилу:
 //- если индекс буквы чётный - печатаем пять раз;
 //- если нечётный - печатаем три раза.
-        String s = "Java";
-
-        for (int i = 0; i < s.length(); i++) {
-            if (i % 2 == 0) {
-                for (int j = 0; j < 5; j ++) {
-                    System.out.print(s.charAt(i));
-                }
-            } else {
-                for (int j = 0; j < 3; j ++) {
-                    System.out.print(s.charAt(i));
-                }
-            }
-            System.out.println();    // Перевод строки
-        }
+//        String s = "Java";
+//
+//        for (int i = 0; i < s.length(); i++) {
+//            if (i % 2 == 0) {
+//                for (int j = 0; j < 5; j ++) {
+//                    System.out.print(s.charAt(i));
+//                }
+//            } else {
+//                for (int j = 0; j < 3; j ++) {
+//                    System.out.print(s.charAt(i));
+//                }
+//            }
+//            System.out.println();    // Перевод строки
+//        }
 
 /*
 JJJJJ
@@ -303,5 +303,68 @@ aaa
 vvvvv
 aaa
 */
+//-----------------------------------------------------------------------
+// На вход подаётся несколько целых чисел.
+// Выведите эти числа, возведённые в степени от двух до пяти.
+//Формат вывода: для каждого введённого числа степени выводятся в отдельной строке через пробел.
+//Примечание. Каждая строка вывода оканчивается числом, а не пробелом.
+//        int number = 3; // Возводимое в степень число
+//        int result = 1; // Результат возведения в степень
+//        int power = 1; // Начальный показатель степени
+//        while(power <= 10) { // условие входа в цикл
+//            result = result * number;
+//            System.out.println(number + " в степени " + power + " = " + result);
+//            power++;
+//        }
+        Scanner sc = new Scanner(System.in);
+        int result =1;
+        while (sc.hasNextInt()) {
+            int a = sc.nextInt();
+            int b = sc.nextInt();
+            int c = sc.nextInt();
+
+                for (int x = 2; x < 6; x++) {
+                    result = result * a;
+                    System.out.print(result + (x < 5 ? " " : ""));
+//                    System.out.println();
+                }
+                System.out.println();
+
+        }
+
+
+
+//        for (int i = 0; i < 3; i++) {
+//
+//            for (int j = 2; j < 6; j++) {
+//                resultA = resultA * a;
+//                System.out.print(resultA + ( j < 5 ? " " : "" ));
+////                System.out.print(space + resultA );
+//
+//                continue;
+//
+//            }
+//            System.out.println();
+//
+//            for (int j = 2; j < 6; j++) {
+//                resultB = resultB * b;
+//                System.out.print(resultB + ( j < 5 ? " " : "" ));
+////                System.out.print(space + resultB );
+//
+//                continue;
+//            }
+//            System.out.println();
+//
+//            for (int j = 2; j < 6; j++) {
+//                resultC = resultC * c;
+//                System.out.print(resultC + ( j < 5 ? " " : "" ));
+////                System.out.print(space + resultC );
+//
+//                continue;
+//            }
+//            System.out.println();
+//            break;
+//        }
     }
 }
+
