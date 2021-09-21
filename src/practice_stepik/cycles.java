@@ -1,4 +1,9 @@
 package practice_stepik;
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
 import java.util.Scanner;
 public class cycles {
     public static void main(String[] args) {
@@ -308,63 +313,52 @@ aaa
 // Выведите эти числа, возведённые в степени от двух до пяти.
 //Формат вывода: для каждого введённого числа степени выводятся в отдельной строке через пробел.
 //Примечание. Каждая строка вывода оканчивается числом, а не пробелом.
-//        int number = 3; // Возводимое в степень число
-//        int result = 1; // Результат возведения в степень
-//        int power = 1; // Начальный показатель степени
-//        while(power <= 10) { // условие входа в цикл
-//            result = result * number;
-//            System.out.println(number + " в степени " + power + " = " + result);
-//            power++;
+
+//        Scanner sc = new Scanner(System.in);
+//            while (sc.hasNext()) {
+//                int a = sc.nextInt();
+//                int result = a;
+//                for (int x = 2; x < 6; x++) {
+//                    result *= a;
+//                    System.out.print(result + (x < 5 ? " " : ""));
+//                }
+//                System.out.println();
+//            }
+//----------------------------------------------------------------------------------------
+// Напечатайте "лесенку" из чисел от единицы до n, n > 0.
+//Примечание. Каждая строка в "лесенке" заканчивается цифрой (не пробелом).
+//        Scanner sc = new Scanner(System.in);
+//        int n =  sc.nextInt();
+//        int step=1;
+//        for(int i = 1; i <=n ; i++){
+//            for(int j = 1; j <= i ; j+=1) {
+//               System.out.print(j + (j < i ? " " : ""));
+//            }
+//            System.out.println();
+//            }
+//--------------------------------------------------------------------------------------------
+//  Предположим, что мы работаем с последовательностью такого вида:1, 2, 2, 3, 3, 3, 4, 4, 4, 4, 5, ... .
+//  Выведите на печать n (n > 0) членов данной последовательности в одну строку через пробел.
+//        Scanner sc = new Scanner(System.in);
+//        int n = sc.nextInt();
+//        for (int i = 1,ckl=1; i <=n ; i++) {
+//            for (int j = 1 ; j <= i && ckl <= n; j += 1) {
+//                System.out.print(i + (j < n? " " : ""));
+//                ckl++;
+//            }
 //        }
+// ---------------------------------------------------------------------------
         Scanner sc = new Scanner(System.in);
-        int result =1;
-        while (sc.hasNextInt()) {
-            int a = sc.nextInt();
-            int b = sc.nextInt();
-            int c = sc.nextInt();
+        int n =  sc.nextInt();
+        int step=1;
+        for(int i = 1; i <=n ; i++){
+            for(int j = 1; j <= i ; j+=1) {
 
-                for (int x = 2; x < 6; x++) {
-                    result = result * a;
-                    System.out.print(result + (x < 5 ? " " : ""));
-//                    System.out.println();
-                }
-                System.out.println();
-
+               System.out.print(j + (j < n ? "_" : "..."));
+            }
+            System.out.println();
         }
 
-
-
-//        for (int i = 0; i < 3; i++) {
-//
-//            for (int j = 2; j < 6; j++) {
-//                resultA = resultA * a;
-//                System.out.print(resultA + ( j < 5 ? " " : "" ));
-////                System.out.print(space + resultA );
-//
-//                continue;
-//
-//            }
-//            System.out.println();
-//
-//            for (int j = 2; j < 6; j++) {
-//                resultB = resultB * b;
-//                System.out.print(resultB + ( j < 5 ? " " : "" ));
-////                System.out.print(space + resultB );
-//
-//                continue;
-//            }
-//            System.out.println();
-//
-//            for (int j = 2; j < 6; j++) {
-//                resultC = resultC * c;
-//                System.out.print(resultC + ( j < 5 ? " " : "" ));
-////                System.out.print(space + resultC );
-//
-//                continue;
-//            }
-//            System.out.println();
-//            break;
-//        }
     }
 }
 
