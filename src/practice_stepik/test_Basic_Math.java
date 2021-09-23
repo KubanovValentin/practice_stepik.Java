@@ -1,7 +1,80 @@
 package practice_stepik;
+import java.math.BigInteger;
 import java.util.Scanner;
 public class test_Basic_Math {
-    public static void main(String[] args){
+    public static void main(String[] args) {
+//-----------------------------
+// Завершите программу таким образом,
+// чтобы она вывела на печать фразу "In the loop" семь раз,
+// каждый раз с новой строки.
+//        int x = 1;
+//        while (x <= 7) {
+//            System.out.println("In the loop");
+//            x++;;
+//        }
+//------------------------------------
+// Исправьте программу таким образом, чтобы она вывела на печать фразу "Java rocks!"
+//        int a = 144;
+//        int b = 33;
+//        if (a >= 10 && b <= 100) {
+//            System.out.println("Java rocks!");
+//        }
+//--------------------------------------
+// Выведите на печать натуральные числа от 1 до 5 по порядку,
+// каждое число на новой строке.
 
+//        Scanner sc = new Scanner(System.in);
+//        int x = sc.nextInt();
+//        int n = sc.nextInt();
+//        if (x <= n) {
+//            while (x <= n){
+//                if(x%2!=0){
+//                    System.out.print(x +" ");
+//                }
+//                x++;
+//            }
+//        }else {
+//            while (n <= x){
+//                if(n%2!=0){
+//                    System.out.print(n +" ");
+//                }
+//                n++;
+//            }
+//        }
+
+
+
+
+//----------------------------------------
+// Выведите все нечётные целые числа, находящиеся между введёнными числами (включительно),
+// в одной строке через пробел, в порядке возрастания.
+//        Scanner sc = new Scanner(System.in);
+//        int a;
+//        int b = sc.nextInt();
+//        for (a=sc.nextInt(); a < b; a++ ){
+//            if(a%3==0)
+//                System.out.print(a);
+//            }
+
+//-----------------------------------------------------
+// а вход подаётся натуральное число n.
+// Определите, является ли это число простым.
+// Выведите true, если число n - простое, и false - если нет.
+
+//        ------------------гуглил.1 решение и оно не прошло т.к не проходит по 1
+//        Scanner sc = new Scanner(System.in);
+//        Integer integer = sc.nextInt();
+//        BigInteger bigInteger = BigInteger.valueOf(integer);
+//        boolean probablePrime = bigInteger.isProbablePrime((int) Math.log(integer));
+//        System.out.println(probablePrime);
+//        ---------------------------------------- 2 решение
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        if(n>1 && n%2!=0 && n%3!=0) {
+            System.out.println(true);
+        }else {
+            System.out.println(false);
+        }
     }
 }
+
