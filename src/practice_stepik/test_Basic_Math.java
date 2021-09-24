@@ -43,19 +43,6 @@ public class test_Basic_Math {
 //        }
 //------------------------------------------
 
-                Scanner sc = new Scanner(System.in);
-                int n = sc.nextInt();
-                sc.close();
-                String s = Integer.toString(n);
-                for (int i = 9; i > 1; i--) {
-                    String i1 = Integer.toString(i);
-                    if (s.contains(i1)) {
-                        System.out.print(i1);
-                        break;
-                    }
-                }
-
-
 
 
 //----------------------------------------
@@ -112,12 +99,21 @@ public class test_Basic_Math {
 //                    }
 //                }
 //            }
-//       ---------------------------
+//       --------------------------- 4 правильное решение!!!!
 
-
+//        Scanner sc = new Scanner(System.in);
+//        int n = sc.nextInt();
+//        int x = 0;
+//        while(n>x){
+//            if (n%2!=0 && n%3!=0 && n!=1||(n==2 || n==3)){
+//                System.out.print(true);
+//                break;
+//            }else {
+//                System.out.print(false);
+//                break;
+//            }
 //
-//
-//
+//        }
 
 // -------------------------------------------------------------------
 // На вход подаётся натуральное число n.
