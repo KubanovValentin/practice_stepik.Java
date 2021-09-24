@@ -41,6 +41,19 @@ public class test_Basic_Math {
 //                n++;
 //            }
 //        }
+//------------------------------------------
+
+                Scanner sc = new Scanner(System.in);
+                int n = sc.nextInt();
+                sc.close();
+                String s = Integer.toString(n);
+                for (int i = 9; i > 1; i--) {
+                    String i1 = Integer.toString(i);
+                    if (s.contains(i1)) {
+                        System.out.print(i1);
+                        break;
+                    }
+                }
 
 
 
@@ -67,14 +80,56 @@ public class test_Basic_Math {
 //        BigInteger bigInteger = BigInteger.valueOf(integer);
 //        boolean probablePrime = bigInteger.isProbablePrime((int) Math.log(integer));
 //        System.out.println(probablePrime);
-//        ---------------------------------------- 2 решение
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        if(n>1 && n%2!=0 && n%3!=0) {
-            System.out.println(true);
-        }else {
-            System.out.println(false);
-        }
+//        ---------------------------------------- 2 решение тоже не проходит
+//        Scanner sc = new Scanner(System.in);
+//        int n = sc.nextInt();
+//        if(n>1 && n<=5 && n%n==0){
+//            System.out.println(true);
+//        }
+//        else if(n>0 && n%2!=0 && n%3!=0 && n!=1) {
+//            System.out.println(true);
+//        }else {
+//            System.out.println(false);
+//        -----------------------------------------3 решение не подошло
+//            int n;
+//            Scanner sc = new Scanner(System.in);
+//            if (sc.hasNext()){
+//                n = sc.nextInt();
+//                for (int i = (int)Math.sqrt(n);i>=1;i-- ){
+//                    if (n==2 || n==3) {
+//                        System.out.println(true);
+//                        break;
+//                    }else if(n%i==0 && i!=1) {
+//                        System.out.println(false);
+//                        break;
+//                    }else if (n==1){
+//                        System.out.println(false);
+//                        break;
+//                    }
+//                    else{
+//                        System.out.println(true);
+//                        break;
+//                    }
+//                }
+//            }
+//       ---------------------------
+
+
+//
+//
+//
+
+// -------------------------------------------------------------------
+// На вход подаётся натуральное число n.
+// Выведите на печать все его делители в одну строку через пробел.
+//        Scanner sc = new Scanner(System.in);
+//        int n = sc.nextInt();
+//        int x = 1;
+//        while(n>=x){
+//            if(n%x==0){
+//                System.out.print(x + " ");
+//            }x++;
+//        }
     }
 }
 
