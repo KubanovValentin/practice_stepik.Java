@@ -1,5 +1,6 @@
 package practice_stepik;
 import java.util.Scanner;
+
 public class Arrays {
     public static void main(String[] args) {
 //        int [] arr = new int[5];
@@ -161,18 +162,13 @@ public class Arrays {
 // ---------------------------------------------------------------------------
 // На вход подаётся строка из элементов, разделённых запятой.
 // Создайте из неё массив и выведите элементы массива каждый в отдельной строке.
-//        String dataLine = "1,2,3,4,5";
-//        String[] dataHeight = dataLine.split(",");
-//
-//       for (String el: dataHeight) {
-//           System.out.println(el);
-//       }
+        String dataLine = "1,2,3,4,5";
+        String[] dataHeight = dataLine.split(",");
 
+       for (String el: dataHeight) {
+           System.out.println(el);
+       }
 
-
-//=====================================================================================
-//        Методы массивов
-//=====================================================================================
 
 
 
