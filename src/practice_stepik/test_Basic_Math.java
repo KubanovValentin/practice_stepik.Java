@@ -42,6 +42,30 @@ public class test_Basic_Math {
 //            }
 //        }
 //------------------------------------------
+// На вход подаётся целое число. Выведите его максимальную цифру.
+       Scanner sc = new Scanner(System.in);
+//        int a= sc.nextInt();
+//        int x = a%10 ;
+//        int y = a/10;
+
+//         a = a/10;
+//       while (){
+//           System.out.print(x);
+//       }
+        int number = sc.nextInt();
+        int number_create;
+        int count=0;
+        if (number<0){ //делаем число положительным
+            number *=-1;
+        }
+        for (;number>0;number /=10,count++){
+            number_create = number%10;
+
+            System.out.print(number_create+" ");
+            System.out.println(count+" ");
+
+        }
+
 
 
 
@@ -49,13 +73,23 @@ public class test_Basic_Math {
 // Выведите все нечётные целые числа, находящиеся между введёнными числами (включительно),
 // в одной строке через пробел, в порядке возрастания.
 //        Scanner sc = new Scanner(System.in);
-//        int a;
-//        int b = sc.nextInt();
-//        for (a=sc.nextInt(); a < b; a++ ){
-//            if(a%3==0)
-//                System.out.print(a);
+//        int x = sc.nextInt();
+//        int n = sc.nextInt();
+//        if (x <= n) {
+//            while (x <= n){
+//                if(x%2!=0){
+//                    System.out.print(x +" ");
+//                }
+//                x++;
 //            }
-
+//        }else {
+//            while (n <= x){
+//                if(n%2!=0){
+//                    System.out.print(n +" ");
+//                }
+//                n++;
+//            }
+//        }
 //-----------------------------------------------------
 // а вход подаётся натуральное число n.
 // Определите, является ли это число простым.

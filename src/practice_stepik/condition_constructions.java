@@ -106,6 +106,7 @@ public class condition_constructions {
 //            System.out.println("NO");
 //        }
 //(System.out.print((sc.nextInt()%7==0)? "YES" : "NO");)
+//        ---------------------------------------------------
 //На вход подаётся целое число.
 // Выведите "YES", если оно нацело делится на 7, но не делится на 5, и "NO" - в обратном случае.
         Scanner sc = new Scanner(System.in);
