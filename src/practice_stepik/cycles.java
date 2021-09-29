@@ -351,16 +351,21 @@ aaa
 // ---------------------------------------------------------------------------
 // Объединим две предыдущие задачи.
 // Выведите "лесенку" из членов последовательности из предыдущего шага от единицы до n, n > 0.
-        Scanner sc = new Scanner(System.in);
-        int n =  sc.nextInt();
-        int step=1;
-        for(int i = 1; i <=n ; i++){
-            for(int j = 1; j <= i ; j+=1) {
-               System.out.print(j + (j < n ? "_" : "..."));
-            }
-            System.out.println();
-        }
+//        Scanner sc = new Scanner(System.in);
 
+       Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int s = 0;
+        for (int k = 1; k <= n; k++) {
+            for (int i = 1; i <= k; i++) {
+                for(int j = 1; j <= i ; j++) {
+                System.out.print(i + " ");
+                s++;
+                }
+            }
+        System.out.println();
+        }
+        sc.close();
     }
 }
 

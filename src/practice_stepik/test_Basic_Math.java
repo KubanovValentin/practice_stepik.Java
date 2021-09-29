@@ -43,31 +43,18 @@ public class test_Basic_Math {
 //        }
 //------------------------------------------
 // На вход подаётся целое число. Выведите его максимальную цифру.
-       Scanner sc = new Scanner(System.in);
-//        int a= sc.nextInt();
-//        int x = a%10 ;
-//        int y = a/10;
-
-//         a = a/10;
-//       while (){
-//           System.out.print(x);
-//       }
-        int number = sc.nextInt();
-        int number_create;
-        int count=0;
-        if (number<0){ //делаем число положительным
-            number *=-1;
-        }
-        for (;number>0;number /=10,count++){
-            number_create = number%10;
-
-            System.out.print(number_create+" ");
-            System.out.println(count+" ");
-
-        }
-
-
-
+//        Scanner sc = new Scanner(System.in);
+//        int a = sc.nextInt();
+//        if (a<0){ //делаем число положительным
+//            a *=-1;
+//        }
+//        int m = a%10;
+//        a=a/10;
+//        while (a>0){
+//            if(a%10>m){
+//                m=a%10;
+//            }a=a/10;
+//        } System.out.print(m);
 
 //----------------------------------------
 // Выведите все нечётные целые числа, находящиеся между введёнными числами (включительно),
@@ -152,14 +139,14 @@ public class test_Basic_Math {
 // -------------------------------------------------------------------
 // На вход подаётся натуральное число n.
 // Выведите на печать все его делители в одну строку через пробел.
-//        Scanner sc = new Scanner(System.in);
-//        int n = sc.nextInt();
-//        int x = 1;
-//        while(n>=x){
-//            if(n%x==0){
-//                System.out.print(x + " ");
-//            }x++;
-//        }
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int x = 1;
+        while(n>=x){
+            if(n%x==0){
+                System.out.print(x + " ");
+            }x++;
+        }
     }
 }
 
