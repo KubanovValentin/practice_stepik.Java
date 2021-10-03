@@ -232,5 +232,8 @@ public class MyNumber {
            int y = sc.nextInt();
            int z = (x + 1) / (y - 1 ) + (y + 1) / (x - 1);
         System.out.println(z);
+
+
+
     }
 }
