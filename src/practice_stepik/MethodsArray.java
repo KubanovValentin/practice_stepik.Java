@@ -1,5 +1,4 @@
 package practice_stepik;
-import java.util.Arrays;
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.Collections;
@@ -42,18 +41,27 @@ public class MethodsArray {
 //        }
 //        Arrays.sort(arr1);
 //        System.out.print(Arrays.toString(arr1));
-//------------------------------------------------------------
+//------------------------------------------------------------не решенная
 // На ввод подаётся последовательность целых чисел.
 // Поменяйте местами соседние элементы последовательности (второй с третьим, четвёртый с пятым и т.д.),
 // кроме первого и последнего. Если находится "одинокий" элемент, который не с чем поменять -
 // необходимо оставить его на месте.
         Scanner sc = new Scanner(System.in);
-        String line = sc.nextLine();
+       String line = sc.nextLine();
         String [] arr = line.split(" ");
-//        for (String el :arr ) {
+        for (String el :arr ) {
 //            System.out.print(el);
-//
-//        }
+
+        }
+        for (int i = 0 ; i < arr.length-1;i++) {
+            if(i==0){
+            }else if(i<i+1){
+            }else {
+            }
+            System.out.print(arr[i]);
+        }
+//            numArr[i] = Integer.parseInt(arr[i]);
+//          System.out.print(arr[0]+arr[i+=2]+arr[i+=1]+arr[arr.length-1]);
 //        System.out.print("\n"+ arr[0]);//первый элемент массива
 //        System.out.print("\n"+ arr[arr.length-1]);//последний элемент массива
 //        System.out.print(arr[0]+ " " + arr[arr.length-1]);
@@ -63,16 +71,16 @@ public class MethodsArray {
 
 
 
-      int numArr[] = new int[arr.length];
-      for (int i = 0 ; i < arr.length-1;i++) {
-            numArr[i] = Integer.parseInt(arr[i]);
+//      int numArr[] = new int[arr.length];
+//      for (int i = 0 ; i < arr.length-1;i++) {
+//            numArr[i] = Integer.parseInt(arr[i]);
 //          System.out.print(arr[0]+arr[i+=2]+arr[i+=1]+arr[arr.length-1]);
 
 //            System.out.print(arr[i+=2]);
 //
 //            System.out.print(numArr[i]);
 //             System.out.print(numArr[i] + " ");
-      }
+//      }
 //        for(int i=0;i<numArr.length;i++) {
 //            for (int j = i + 1; j < numArr.length; j++) {
 //                if (numArr[i] > numArr[j]) {
@@ -83,7 +91,76 @@ public class MethodsArray {
 //                }
 //            }
 //        }
+//-----------------------------------------------------------------------
+// На вход подаётся строка текста.
+// Определите, в каком по счёту слове этого предложения меньше всего букв, и выведите на печать.
+// Если таких слов несколько, выведите номер первого по порядку.
 
+//   -------------------------------- эта задача выводит количество букв, а надо счет
+//        Scanner sc = new Scanner(System.in);
+//        String line = sc.nextLine();
+//        String [] arr = line.split(" ");
+//        for (String el :arr ) {
+//
+//        }
+//
+//        int i;
+//        int small;
+//        for ( i = 0; i < arr.length; i++) {
+//            for(int j=i+1;j<arr.length;j++) {
+//                if(arr[i].length() > arr[j].length()) {
+//                    small = arr[0].length();
+//                    small = arr[i].length();
+//                    arr[i] = arr[j];
+//                    small=arr[j].length();
+//                    System.out.print(small);
+//                }
+
+//            }
+//        }
+
+
+//---------------------------------------выявление индексов массива
+//        Scanner sc = new Scanner(System.in);
+//        String line = sc.nextLine();
+//        String [] arr = line.split(" ");
+//        for (String el :arr ) {
+//        }
+//        int indexOfMax = 0;
+//        int indexOfMin = 0;
+//        for (int i = 1; i < arr.length; i++)
+//        {
+//            if (arr[i].length() > arr[indexOfMax].length()) {
+//                indexOfMax = i;
+//            }
+//            else if (arr[i].length() < arr[indexOfMin].length())
+//            {
+//                indexOfMin = i;
+//            }
+//        }
+//        System.out.println(indexOfMin);
+//------------------------------------------правильное решение(счетчик count)
+//        Scanner sc = new Scanner(System.in);
+//        String line = sc.nextLine();
+//        String [] arr = line.split(" ");
+//        for (String el :arr ) {
+//        }
+//        int i;
+//        int small;
+//        int count=1;
+//        for ( i = 0; i < arr.length; i++ ) {
+//            for(int j=i+1;j<arr.length;j++) {
+//               if(arr[i].length() > arr[j].length()) {
+//                  small = arr[0].length();
+//                   small = arr[i].length();
+//                   arr[i] = arr[j];
+//                   small=arr[j].length();
+////                  System.out.print(small);
+//                   count++;
+//              }
+//
+//           }
+//       }System.out.print(count);
 
     }
 }
