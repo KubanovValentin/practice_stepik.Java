@@ -1,6 +1,7 @@
 package practice_stepik;
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.Arrays;
 import java.util.Collections;
 public class MethodsArray {
     public static void main(String[] args) {
@@ -46,29 +47,75 @@ public class MethodsArray {
 // Поменяйте местами соседние элементы последовательности (второй с третьим, четвёртый с пятым и т.д.),
 // кроме первого и последнего. Если находится "одинокий" элемент, который не с чем поменять -
 // необходимо оставить его на месте.
+
+//        Scanner sc = new Scanner(System.in);
+//        String line = sc.nextLine();
+//        String [] arr=line.split(" ");
+//        int n = arr.length;
+//        int [] arr1=new int [n];
+//        for (int i=1; i <=n; i++) {
+//            if (i == 1) {
+//                System.out.print(i + " ");
+//            } else if (n == 2) {
+//                System.out.print(n);
+//                break;
+//            } else if (i == n) {
+//                System.out.print(n + " ");
+//                break;
+//            }else if (i==n-1){
+//                System.out.print(n-1+" ");
+//            }
+//            while (i % 2 == 0 && i!=n-1) {
+//                if (n == 3) {
+//                    System.out.print(i + " " + n);
+//                    break;
+//                }
+//                System.out.print(i + 1 + " ");
+//                System.out.print(i + " ");
+//                i++;
+//
+//            }
+//        }
+//
+
+//        ---------------------------------------
         Scanner sc = new Scanner(System.in);
-       String line = sc.nextLine();
-        String [] arr = line.split(" ");
-        for (String el :arr ) {
+        String line = sc.nextLine();
+        String[] arr = line.split(" ");
+        for (String el : arr) {
 //            System.out.print(el);
 
         }
-        for (int i = 0 ; i < arr.length-1;i++) {
-            if(i==0){
-            }else if(i<i+1){
-            }else {
-            }
-            System.out.print(arr[i]);
+        int[] numArr = new int[arr.length];
+        for (int i = 0; i < arr.length; i++) {
+            numArr[i] = Integer.parseInt(arr[i]);
+//            System.out.print(numArr[i]);
         }
-//            numArr[i] = Integer.parseInt(arr[i]);
-//          System.out.print(arr[0]+arr[i+=2]+arr[i+=1]+arr[arr.length-1]);
+
+        for(int j=0; j < numArr.length; j++){
+            if (j==0){
+                System.out.print(numArr[j]+ " ");
+            } else if (numArr.length<=3){
+                System.out.print(numArr[j]+ " ");
+            } else if (j == numArr.length-1){
+                System.out.print(numArr[j]+" ");
+            }else if (j%2==0){
+                System.out.print(numArr[j] + " ");
+                System.out.print(numArr[j-1] +" ");
+            }else if (j == numArr.length-2){
+                System.out.print(numArr[j] + " ");
+            }
+        }
+
+
+
+//       System.out.print(arr[0]+arr[i+=2]+arr[i+=1]+arr[arr.length-1]);
 //        System.out.print("\n"+ arr[0]);//первый элемент массива
 //        System.out.print("\n"+ arr[arr.length-1]);//последний элемент массива
 //        System.out.print(arr[0]+ " " + arr[arr.length-1]);
 //        System.out.println("\n"+ arr.length);//длина массива
-//        String f = arr[0];
-//        while (arr[0]> int i && arr[arr.length-1] > i)
-
+//
+//
 
 
 //      int numArr[] = new int[arr.length];
@@ -162,8 +209,8 @@ public class MethodsArray {
 //           }
 //       }System.out.print(count);
 
+        }
     }
-}
 //================================================================================
 //---------------------------------Задачи на массивы
 //==================================================================================
