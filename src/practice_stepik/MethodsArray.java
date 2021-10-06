@@ -1,7 +1,6 @@
 package practice_stepik;
 import java.util.ArrayList;
 import java.util.Scanner;
-import java.util.Arrays;
 import java.util.Collections;
 public class MethodsArray {
     public static void main(String[] args) {
@@ -42,102 +41,51 @@ public class MethodsArray {
 //        }
 //        Arrays.sort(arr1);
 //        System.out.print(Arrays.toString(arr1));
-//------------------------------------------------------------не решенная
+//------------------------------------------------------------
 // На ввод подаётся последовательность целых чисел.
 // Поменяйте местами соседние элементы последовательности (второй с третьим, четвёртый с пятым и т.д.),
 // кроме первого и последнего. Если находится "одинокий" элемент, который не с чем поменять -
 // необходимо оставить его на месте.
 
-//        Scanner sc = new Scanner(System.in);
+ //       Scanner sc = new Scanner(System.in);
 //        String line = sc.nextLine();
-//        String [] arr=line.split(" ");
-//        int n = arr.length;
-//        int [] arr1=new int [n];
-//        for (int i=1; i <=n; i++) {
-//            if (i == 1) {
-//                System.out.print(i + " ");
-//            } else if (n == 2) {
-//                System.out.print(n);
-//                break;
-//            } else if (i == n) {
-//                System.out.print(n + " ");
-//                break;
-//            }else if (i==n-1){
-//                System.out.print(n-1+" ");
-//            }
-//            while (i % 2 == 0 && i!=n-1) {
-//                if (n == 3) {
-//                    System.out.print(i + " " + n);
-//                    break;
-//                }
-//                System.out.print(i + 1 + " ");
-//                System.out.print(i + " ");
-//                i++;
-//
-//            }
-//        }
-//
-
-//        ---------------------------------------
-        Scanner sc = new Scanner(System.in);
-        String line = sc.nextLine();
-        String[] arr = line.split(" ");
-        for (String el : arr) {
+ //       String[] arr = line.split(" ");
+//        for (String el : arr) {
 //            System.out.print(el);
 
-        }
-        int[] numArr = new int[arr.length];
-        for (int i = 0; i < arr.length; i++) {
-            numArr[i] = Integer.parseInt(arr[i]);
+//        }
+//        int[] numArr = new int[arr.length];
+//        for (int i = 0; i < arr.length; i++) {
+//            numArr[i] = Integer.parseInt(arr[i]);
 //            System.out.print(numArr[i]);
-        }
+ //       }
+//
+//        for(int j=0; j < numArr.length; j++){
+//            if (j==0){
+//                System.out.print(numArr[j]+ " ");
+//            } else if (numArr.length<=3){
+//                System.out.print(numArr[j]+ " ");
+//            } else if (j == numArr.length-1){
+//                System.out.print(numArr[j]+" ");
+//            }else if (j%2==0){
+//                System.out.print(numArr[j] + " ");
+//                System.out.print(numArr[j-1] +" ");
+//            }else if (j == numArr.length-2){
+//                System.out.print(numArr[j] + " ");
+//            }
+//        }
 
-        for(int j=0; j < numArr.length; j++){
-            if (j==0){
-                System.out.print(numArr[j]+ " ");
-            } else if (numArr.length<=3){
-                System.out.print(numArr[j]+ " ");
-            } else if (j == numArr.length-1){
-                System.out.print(numArr[j]+" ");
-            }else if (j%2==0){
-                System.out.print(numArr[j] + " ");
-                System.out.print(numArr[j-1] +" ");
-            }else if (j == numArr.length-2){
-                System.out.print(numArr[j] + " ");
-            }
-        }
 
-
-
+//-------------------------.
 //       System.out.print(arr[0]+arr[i+=2]+arr[i+=1]+arr[arr.length-1]);
 //        System.out.print("\n"+ arr[0]);//первый элемент массива
 //        System.out.print("\n"+ arr[arr.length-1]);//последний элемент массива
 //        System.out.print(arr[0]+ " " + arr[arr.length-1]);
 //        System.out.println("\n"+ arr.length);//длина массива
-//
-//
 
 
-//      int numArr[] = new int[arr.length];
-//      for (int i = 0 ; i < arr.length-1;i++) {
-//            numArr[i] = Integer.parseInt(arr[i]);
-//          System.out.print(arr[0]+arr[i+=2]+arr[i+=1]+arr[arr.length-1]);
 
-//            System.out.print(arr[i+=2]);
-//
-//            System.out.print(numArr[i]);
-//             System.out.print(numArr[i] + " ");
-//      }
-//        for(int i=0;i<numArr.length;i++) {
-//            for (int j = i + 1; j < numArr.length; j++) {
-//                if (numArr[i] > numArr[j]) {
-//                    int temp = numArr[i];
-//                    numArr[i] = numArr[j];
-//                    numArr[j] = temp;
-//
-//                }
-//            }
-//        }
+
 //-----------------------------------------------------------------------
 // На вход подаётся строка текста.
 // Определите, в каком по счёту слове этого предложения меньше всего букв, и выведите на печать.
@@ -208,9 +156,45 @@ public class MethodsArray {
 //
 //           }
 //       }System.out.print(count);
+//---------------------------------------------------------------
+// Дана последовательность целых чисел.
+// Определите минимальную сумму пар элементов массива, расстояние (разница) между индексами которых равно 2.
+// Если таких пар нет, выведите 0.
+        Scanner sc = new Scanner(System.in);
+        String line = sc.nextLine();
+        String[] arr = line.split(" ");
+        for (String el : arr) {
+            System.out.print(el+el);
 
         }
-    }
+        int[] numArr = new int[arr.length];
+
+        for (int i = 0; i < arr.length; i++) {
+            numArr[i] = Integer.parseInt(arr[i]);
+//            System.out.print(numArr[i]);
+        }
+        int count=0;
+        String str;
+        for(int j=0; j < numArr.length; j++){
+            if (numArr.length<=3){
+                System.out.print(0);
+                break;
+            }
+            else if (j < numArr.length-2){
+                int x = numArr[j] + numArr[j+2];
+                if(x >(numArr[j] + numArr[j+2])){
+                    System.out.print(numArr[j] + numArr[j+2]);
+                }
+                count++;
+
+            }
+        }
+//        int[] numArrX = new int[count];
+//        System.out.print(numArrX[x]);
+//        System.out.print("\n"+count);
+
+       }
+   }
 //================================================================================
 //---------------------------------Задачи на массивы
 //==================================================================================
