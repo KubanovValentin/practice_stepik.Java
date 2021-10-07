@@ -1,6 +1,7 @@
 package practice_stepik;
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.Arrays;
 import java.util.Collections;
 public class MethodsArray {
     public static void main(String[] args) {
@@ -156,42 +157,95 @@ public class MethodsArray {
 //
 //           }
 //       }System.out.print(count);
-//---------------------------------------------------------------
+//---------------------------------------------------------------не решено
 // Дана последовательность целых чисел.
 // Определите минимальную сумму пар элементов массива, расстояние (разница) между индексами которых равно 2.
 // Если таких пар нет, выведите 0.
-        Scanner sc = new Scanner(System.in);
-        String line = sc.nextLine();
-        String[] arr = line.split(" ");
-        for (String el : arr) {
-            System.out.print(el+el);
-
-        }
-        int[] numArr = new int[arr.length];
-
-        for (int i = 0; i < arr.length; i++) {
-            numArr[i] = Integer.parseInt(arr[i]);
-//            System.out.print(numArr[i]);
-        }
-        int count=0;
-        String str;
-        for(int j=0; j < numArr.length; j++){
-            if (numArr.length<=3){
-                System.out.print(0);
-                break;
-            }
-            else if (j < numArr.length-2){
-                int x = numArr[j] + numArr[j+2];
-                if(x >(numArr[j] + numArr[j+2])){
-                    System.out.print(numArr[j] + numArr[j+2]);
-                }
-                count++;
-
-            }
-        }
+//        Scanner sc = new Scanner(System.in);
+//        String line = sc.nextLine();
+//        String[] arr = line.split(" ");
+//        for (String el : arr) {
+//            System.out.print(el+el);
+//
+//        }
+//        int[] numArr = new int[arr.length];
+//
+//        for (int i = 0; i < arr.length; i++) {
+//            numArr[i] = Integer.parseInt(arr[i]);
+////            System.out.print(numArr[i]);
+//        }
+//        int count=0;
+//        String str;
+//        for(int j=0; j < numArr.length; j++){
+//            if (numArr.length<=3){
+//                System.out.print(0);
+//                break;
+//            }
+//            else if (j < numArr.length-2){
+//                int x = numArr[j] + numArr[j+2];
+//                if(x >(numArr[j] + numArr[j+2])){
+//                    System.out.print(numArr[j] + numArr[j+2]);
+//                }
+//                count++;
+//
+//            }
+//        }
 //        int[] numArrX = new int[count];
 //        System.out.print(numArrX[x]);
 //        System.out.print("\n"+count);
+
+//===================================================================================
+//                       Многомерные массивы
+//=====================================================================================
+//       Два индийских программиста, Махатма и Джавахарлал, вдруг обнаружили,
+//       что таблица умножения иногда весьма полезна для программистов, и решили её выучить.
+//       Помогите нашим индийским друзьям!
+//       На вход подаются числа n и m. Выведите таблицу умножения n * m (см. пример).
+//        Scanner sc = new Scanner(System.in);
+//        int n = sc.nextInt();
+//        int m = sc.nextInt();
+//
+//        int[][]sample ={{0,1, 2, 3,4,5,6,7,8,9,10},{0,1, 2, 3,4,5,6,7,8,9,10}};
+//        for (int i=1;i<=n;i++){
+//            for(int j=1;j<=m;j++){
+//                int x = sample[0][i]*sample[1][j];
+//                System.out.print(x + (j < m? " " : ""));
+//            } System.out.println();
+//        }
+//------------------------------------------------------------------------
+// На ввод подаются несколько строк текста. Вначале подаётся число n - количество строк, а затем сами строки.
+// Знаки препинания удалены.
+//Образуйте многомерный массив слов из этих строк и выведите его на печать.
+//        Scanner sc = new Scanner(System.in);
+//         String num = sc.nextLine();
+//         int size = Integer.parseInt(num);
+//
+//        String[][]arrays=new String[size][];
+//        for (int i=0;i<arrays.length;i++){
+//            arrays[i] = sc.nextLine().split(" ");
+//            System.out.println(Arrays.toString(arrays[i]));
+//        }
+
+
+//-----------------------------------------------------------------------------
+// На вход подаётся матрица (двумерный массив).
+// Все элементы матрицы - целые числа.
+// Найдите её размеры и выведите на печать в соответсвии с примером.
+        Scanner sc = new Scanner(System.in);
+
+        String line = sc.nextLine();
+        String [] arr = line.split(" ");
+        for (String el :arr ) {
+           System.out.print(el);
+        }System.out.println();
+        String line1 = sc.nextLine();
+        String [] arr1 = line1.split(" ");
+        for (String el1 :arr1 ) {
+            System.out.print(el1);
+        }
+
+
+//
 
        }
    }
