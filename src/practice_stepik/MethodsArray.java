@@ -231,19 +231,18 @@ public class MethodsArray {
 // На вход подаётся матрица (двумерный массив).
 // Все элементы матрицы - целые числа.
 // Найдите её размеры и выведите на печать в соответсвии с примером.
-        Scanner sc = new Scanner(System.in);
-
-        String line = sc.nextLine();
-        String [] arr = line.split(" ");
-        for (String el :arr ) {
-           System.out.print(el);
-        }System.out.println();
-        String line1 = sc.nextLine();
-        String [] arr1 = line1.split(" ");
-        for (String el1 :arr1 ) {
-            System.out.print(el1);
-        }
-
+//        Scanner sc = new Scanner(System.in);
+//
+//        String line = sc.nextLine();
+//        String [] arr = line.split(" ");
+//        for (String el :arr ) {
+//           System.out.print(el);
+//        }System.out.println();
+//        String line1 = sc.nextLine();
+//        String [] arr1 = line1.split(" ");
+//        for (String el1 :arr1 ) {
+//            System.out.print(el1);
+//        }
 
 //
 
