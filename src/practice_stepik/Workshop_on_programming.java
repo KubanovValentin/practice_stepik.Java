@@ -103,5 +103,35 @@ public class Workshop_on_programming {
 //           }
 
 //        -----------------------------------------------------------
+//        Дано трехзначное число (оно может быть отрицательным). Найдите сумму его цифр.
+//        Scanner sc = new Scanner(System.in);
+//           int n = sc.nextInt();
+//
+//           if(n<0){
+//               int m=-1;
+//               n=n*m;
+//               int a = n/1%10;
+//               int b = n/10%10;
+//               int c = n/100%10;
+//               int sum = a + b + c;
+//               System.out.println(sum);
+//           }else {
+//               int a = n/1%10;
+//               int b = n/10%10;
+//               int c = n/100%10;
+//               int sum = a + b + c;
+//               System.out.println(sum);
+//           }
+
+
+//        -------------------------------------------------------------
+//        Дано целое число n. Выведите следующее за ним четное число.
+//        При решении этой задачи нельзя использовать условную инструкцию if и циклы.
+
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        boolean x = (n%3==0||n==1);
+
+        System.out.println();
     }
 }
