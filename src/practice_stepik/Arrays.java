@@ -1,6 +1,7 @@
 package practice_stepik;
 import java.util.Scanner;
-
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 public class Arrays {
     public static void main(String[] args) {
 //        int [] arr = new int[5];
@@ -162,13 +163,75 @@ public class Arrays {
 // ---------------------------------------------------------------------------
 // На вход подаётся строка из элементов, разделённых запятой.
 // Создайте из неё массив и выведите элементы массива каждый в отдельной строке.
-        String dataLine = "1,2,3,4,5";
-        String[] dataHeight = dataLine.split(",");
+//        String dataLine = "1,2,3,4,5";
+//        String[] dataHeight = dataLine.split(",");
+//
+//       for (String el: dataHeight) {
+//           System.out.println(el);
+//       }
+//--------------------------------------------------
+// создаем массив с месяцами и днями
+//        int []daysInMonth = new int[12];
+//        daysInMonth[0]=31;
+//        daysInMonth[1]=28;
+//        daysInMonth[2]=31;
+//        daysInMonth[3]=30;
+//        daysInMonth[4]=31;
+//        daysInMonth[5]=30;
+//        daysInMonth[6]=31;
+//        daysInMonth[7]=31;
+//        daysInMonth[8]=30;
+//        daysInMonth[9]=31;
+//        daysInMonth[10]=30;
+//        daysInMonth[11]=31;
+////        int march = daysInMonth[2];
+////        System.out.println(march);
+//        for (int i=0;i< daysInMonth.length;i++){
+//            System.out.println(daysInMonth[i]);
+//        }
+//----------------------------------------------
+//        int[] nums = new int[100];
+//        for (int i=0;i<nums.length;i++){
+//            nums[i]=i*10;
+//        }
+//        for (int i= 0;i< nums.length;i++){
+//            System.out.println(nums[i]);
+//        }
+//        for (int i : nums){
+//            System.out.println(i);
+//        }
+//        char[] chars = new char[10];
+//        for (char ch:chars){
+//            System.out.println(ch);
+//        }
+//------------------------------------------------------------
+// создать 1 массив чисел и проинициализировать его значениями от 100 до 1000
 
-       for (String el: dataHeight) {
-           System.out.println(el);
-       }
+// создать 2 массив по длине равный 1 (использовать свойство лейт).проинициализировать его значениями взятыми
+// из 1 массива но в обратном порядке
+//
+// в цикле фор итч вывести все элементы 2 массива
 
+        int count=0;
+        for(int i = 100; i <=1000;i++){
+            count++;
+        }
+        int[]num1=new int[count];
+        for (int x = 0;x<num1.length;x++){
+            num1[x]=x+100;
+        }
+        for (int x = 0;x<num1.length;x++){
+//            System.out.println(num1[x]);
+        }
+        int[] num2=new int[num1.length];
+        for (int y=num1.length-1;y>=0;y--){
+            num2[y]=y+100;
+            System.out.println(num2[y]);
+        }
+
+//        for (int y : num2){
+//            System.out.println(y);
+//       }
     }
 
 }

@@ -353,27 +353,65 @@ aaa
 // Выведите "лесенку" из членов последовательности из предыдущего шага от единицы до n, n > 0.
 //        Scanner sc = new Scanner(System.in);
 
-       Scanner sc = new Scanner(System.in);
-        int num = sc.nextInt();
-        int s = 0;
-        for (int i = 1; i <= num ; i++) {
-            int count= 1;
-            for (int j = 1; j <= i; j++) {
-                for (int k = 1; k <= j; k++) {
-                    if (count <= i) {
-                        System.out.print(j);
-                        if (count < i) {
-                            System.out.print(" ");
-                        }
-                    }
-                    count++;
-                }
+//       Scanner sc = new Scanner(System.in);
+//        int num = sc.nextInt();
+//        int s = 0;
+//        for (int i = 1; i <= num ; i++) {
+//            int count= 1;
+//            for (int j = 1; j <= i; j++) {
+//                for (int k = 1; k <= j; k++) {
+//                    if (count <= i) {
+//                        System.out.print(j);
+//                        if (count < i) {
+//                            System.out.print(" ");
+//                        }
+//                    }
+//                    count++;
+//                }
+////
+//            }
+//            if (i < num) {
+//                    System.out.println();
+//                }
+//        }
+//--------------------------------------------------
+// вывести все четные числа от 1000 до 0
+//        int i =1000;
+//        while (i>=0){
+//            if (i%2==0){
+//                System.out.println(i);
+//            }
+//            i--;
+//        }
+//-------------------------------------------------
+// посчитать среднее арифметическое всех чисел от 0 до 100(формула сумма всех чисел деленное на их количество)
+//       int i=1;
+//       int sum=0;
+//       while (i<=100){
 //
-            }
-            if (i < num) {
-                    System.out.println();
-                }
-        }
+//           sum = sum + i;
+//           i++;
+//
+//       }
+//        float rez = sum / (float)i;
+//        System.out.println(rez);
+
+//-----------------------------------------------------
+// вывести все нечетные числа от 100 до 100. которые деляться без остатка на 5
+
+//        for(int x=100;x<=1000;x++){
+//            if(x%2!=0){
+//                if (x%5==0){
+//                    System.out.println(x);
+//                }
+//            }
+//        }
+//-----------------второе решение
+//        for (int i = 100; i <= 1000; i++) {
+//            if (i % 2 == 1 && i % 5 == 0) {
+//                System.out.println(i);
+//            }
+//        }
 
     }
 }
