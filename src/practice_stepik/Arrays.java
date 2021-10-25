@@ -211,27 +211,44 @@ public class Arrays {
 // из 1 массива но в обратном порядке
 //
 // в цикле фор итч вывести все элементы 2 массива
-
-        int count=0;
-        for(int i = 100; i <=1000;i++){
-            count++;
-        }
-        int[]num1=new int[count];
-        for (int x = 0;x<num1.length;x++){
-            num1[x]=x+100;
-        }
-        for (int x = 0;x<num1.length;x++){
-//            System.out.println(num1[x]);
-        }
-        int[] num2=new int[num1.length];
-        for (int y=num1.length-1;y>=0;y--){
-            num2[y]=y+100;
-            System.out.println(num2[y]);
-        }
+//----------------------------- 1решение
+//        int count=0;
+//        for(int i = 100; i <=1000;i++){
+//            count++;
+//        }
+//        int[]num1=new int[count];
+//        for (int x = 0;x<num1.length;x++){
+//            num1[x]=x+100;
+//        }
+//        for (int x = 0;x<num1.length;x++){
+////            System.out.println(num1[x]);
+//        }
+//        int[] num2=new int[num1.length];
+//        for (int y=num1.length-1;y>=0;y--){
+//            num2[y]=y+100;
+//            System.out.println(num2[y]);
+//        }
 
 //        for (int y : num2){
 //            System.out.println(y);
 //       }
+
+//  --------------------------------2решение
+//        int[] first = new int[900];
+//        for (int i=0;i<first.length;i++){
+//            first[i]=i+100;
+////            System.out.println(first[i]);
+//        }
+//        int[]second = new int[first.length];
+//        for (int i=0,  j = first.length-1;i< first.length;i++, j--){
+//            second[j] = first[i];
+//        }
+//        for (int i:second){
+//            System.out.println(i);
+//        }
+
+
+
     }
 
 }
