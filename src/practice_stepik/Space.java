@@ -124,6 +124,8 @@ public class Space {
 // и если месяц введен правильно то вывести на экран время года к которому этот месяц относиться
 // в противном случае вывести сообщение что месяц не существует.
 
+
+//----------------1 решение
 //        Scanner sc = new Scanner(System.in);
 //        String timeOfTheYear = sc.nextLine();
 //        switch (timeOfTheYear) {
@@ -166,5 +168,108 @@ public class Space {
 //            default:
 //                System.out.println("месяц не существует, введите месяц с заглавной буквы");
 //        }
+
+
+
+//-----------2 решение
+
+//        Scanner sc = new Scanner(System.in);
+//        String numberOfMonth = sc.nextLine();
+//        String numberOfMonth12="Декабрь";
+//        String numberOfMonth1="Январь";
+//        String numberOfMonth2="Февраль";
+//        String numberOfMonth3="Март";
+//        String numberOfMonth4="Апрель";
+//        String numberOfMonth5="Май";
+//        String numberOfMonth6="Июнь";
+//        String numberOfMonth7="Июль";
+//        String numberOfMonth8="Август";
+//        String numberOfMonth9="Сентябрь";
+//        String numberOfMonth10="Октябрь";
+//        String numberOfMonth11="Ноябрь";
+//
+//        if (numberOfMonth.equals(numberOfMonth12)){
+//            System.out.println("зима начало");
+//        }else if(numberOfMonth.equals(numberOfMonth1)){
+//            System.out.println("зима середина");
+//        }else if(numberOfMonth.equals(numberOfMonth2)){
+//            System.out.println("зима конец");
+//        }else if(numberOfMonth.equals(numberOfMonth3)){
+//            System.out.println("весна начало");
+//        }else if(numberOfMonth.equals(numberOfMonth4)){
+//            System.out.println("весна середина");
+//        }else if(numberOfMonth.equals(numberOfMonth5)){
+//            System.out.println("весна конец");
+//        }else if(numberOfMonth.equals(numberOfMonth6)){
+//            System.out.println("лето начало");
+//        }else if(numberOfMonth.equals(numberOfMonth7)){
+//            System.out.println("лето середина");
+//        }else if(numberOfMonth.equals(numberOfMonth8)){
+//            System.out.println("лето конец");
+//        }else if(numberOfMonth.equals(numberOfMonth9)){
+//            System.out.println("осень начало");
+//        }else if(numberOfMonth.equals(numberOfMonth10)){
+//            System.out.println("осень середина");
+//        }else if(numberOfMonth.equals(numberOfMonth11)){
+//            System.out.println("осень конец");
+//        }else {
+//            System.out.println("месяц не существует, введите месяц с заглавной буквы");
+//        }
+
+
+
+
+//------------3 решение
+
+
+//        Scanner sc = new Scanner(System.in);
+//        String month = sc.nextLine();
+//
+//        if (month.equals("Декабрь") || month.equals("Январь") || month.equals("Февраль")) {
+//            System.out.println("Зима");
+//        } else if (month.equals("Март") || month.equals("Апрель") || month.equals("Май")) {
+//            System.out.println("Весна");
+//        } else if (month.equals("Июнь") || month.equals("Июль") || month.equals("Август")) {
+//            System.out.println("Лето");
+//        } else if (month.equals("Сентябрь") || month.equals("Октябрь") || month.equals("Ноябрь")) {
+//            System.out.println("Осень");
+//        } else {
+//            System.out.println("Несуществующее время года или введите правильно с заглавной буквы");
+//        }
+
+
+//------------4 решение
+
+//        Scanner sc = new Scanner(System.in);
+//        String month = sc.nextLine();
+//
+//
+//        switch (month) {
+//            case "Декабрь":
+//            case "Январь":
+//            case "Февраль":
+//                System.out.println("Зима");
+//                break;
+//            case "Март":
+//            case "Апрель":
+//            case "Май":
+//                System.out.println("Весна");
+//                break;
+//            case "Июнь":
+//            case "Июль":
+//            case "Август":
+//                System.out.println("Лето");
+//                break;
+//            case "Сентябрь":
+//            case "Октябрь":
+//            case "Ноябрь":
+//                System.out.println("Осень");
+//                break;
+//            default:
+//                System.out.println("Несуществующее время года");
+//                break;
+//        }
+
+
     }
 }
