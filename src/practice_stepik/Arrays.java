@@ -246,6 +246,17 @@ public class Arrays {
 //        for (int i:second){
 //            System.out.println(i);
 //        }
+//---------------------
+//        String s1 = 'A' + '1' + "2";
+//        System.out.println("что вышло ^: " + s1);
+//        String  s2 = "A" + 12;
+//        System.out.println("что вышло ^: " + s2);
+//        String  s3 = "A" + ('\t' + '\u0003');
+//        System.out.println("что вышло ^: " + s3);
+//        String  s4 = 'A' + "12";
+//        System.out.println("что вышло ^: " + s4);
+
+
 
 
 
