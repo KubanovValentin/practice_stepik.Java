@@ -6,7 +6,6 @@ package homework3;
 public class Main {
     public static void main(String[] args) {
         Worker worker = new Worker("Валентин","программист-Java", 200000);
-        Worker worker1 = new Worker(12);
-        System.out.println(Worker.);
+        System.out.println(worker.getInfo(12));
     }
 }

@@ -4,7 +4,6 @@ public class Worker {
     String name;
     String profession;
     int salary;
-    int month;
 
     public Worker(String name, String profession, int salary) {
         this.name = name;
@@ -12,12 +11,10 @@ public class Worker {
         this.salary = salary;
     }
 
-    public Worker (int month) {
-        this.month = month;
+    String getInfo(int month){
+        return "Имя: " + name + ". Должность: " + profession + ". За последние " + month + " месяцев получил " + month * salary + " рублей.";
     }
 
-    int monthSolary() {
-        return month * salary;
-    }
+
 
 }
