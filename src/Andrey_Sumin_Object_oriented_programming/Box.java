@@ -5,9 +5,33 @@ public class Box {
     double height;
     double length;
 
+//-----------------------
+    //конструктор без параметров
+//    Box () {
+//        width = 10;
+//        height =10;
+//        length =10;
+//        //после этого создаем новую box в main
+//    }
+//-------------------------
+    //конструктор с параметрами
+//    Box(double width, double height, double length) {
+//        this.width = width;
+//        this.height = height;
+//        this.length = length;
+//    }
+//-----------------------------
+//нанажимаем клавиши Alt + Insert и вызываем меню
+//выбираем конструктор
 
-    void setDimens(double width, double height, double length) {
+    public Box(double width, double height, double length) {
         this.width = width;
+        this.height = height;
+        this.length = length;
+    }
+//--------------------------------
+    void setDimens(double width, double height, double length) {
+       this.width = width;
         this.height = height;
         this.length = length;
     }

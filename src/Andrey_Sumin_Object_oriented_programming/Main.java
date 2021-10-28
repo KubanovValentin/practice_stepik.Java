@@ -77,9 +77,25 @@ public class Main {
 //        System.out.println(square);
 
 //------------------------------
-        Box box = new Box();
-        box.setDimens(15,15,15);
+//        Box box = new Box();
+//        box.setDimens(15,15,15);
+//        System.out.println(box.volume());
+
+//------------------------------
+// для конструктора  без параметров
+
+//        Box box =new Box() ;//вызываем конструктор без параметров
+//        System.out.println(box.volume());
+//        Box box2 = new Box();
+//        System.out.println(box2.volume());
+
+//если у конструктора есть параметры, то нужно вызвать конструктор с параметрами
+        Box box =new Box(15,15,15) ;//вызываем конструктор с параметрами
         System.out.println(box.volume());
+        Box box2 = new Box(30,30,30);
+        System.out.println(box2.volume());
+//        //если забыли последовательность то ctrl + P
+
 
     }
 }
