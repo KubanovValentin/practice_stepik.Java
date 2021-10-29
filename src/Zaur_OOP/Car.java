@@ -10,8 +10,10 @@ class CarTest {
         int a;
         Car ca1 = new Car();
         Car car2 = new Car();
-        Car car3;
-        System.out.println(car2.engine);
-        System.out.println(new Car().color);
+        ca1.color = "black";
+        ca1.engine = "V8";
+        System.out.println("Цвет машины: " + ca1.color + "\nМотор машины: " + ca1.engine);
+
+//        System.out.println(new Car().color);
     }
 }
