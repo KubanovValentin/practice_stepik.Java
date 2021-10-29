@@ -5,7 +5,7 @@ package homework3;
 // (значение  i передаеться в качестве параметра)
 public class Main {
     public static void main(String[] args) {
-        Worker worker = new Worker("Валентин","программист-Java", 200000);
+        Worker worker = new Worker("Валентин Кубанов","программист-Java", 200000);
         System.out.println(worker.getInfo(12));
     }
 }
