@@ -49,7 +49,7 @@ public class Main {
 //        int result = (chel1.age + chel2.age + chel3.age + chel4.age + chel5.age) / 5;
 //        System.out.println(result);
 
-//-----------------------
+//-----------------------------
 //        Box box1=new Box();
 //        Box box2=new Box();
 //        box1.height = 5;
@@ -68,7 +68,7 @@ public class Main {
 //        System.out.println(volume1);
 //        System.out.println(volume2);
 
-//-------------------------
+//------------------------------
 
 //        Test test = new  Test();
 //        int square= test.square(80);
@@ -94,7 +94,7 @@ public class Main {
         System.out.println(box.volume());
         Box box2 = new Box(30,30,30);
         System.out.println(box2.volume());
-//        //если забыли последовательность то ctrl + P
+//        //если забыли последовательность, то ctrl + P
 
 
     }
