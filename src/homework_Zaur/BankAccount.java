@@ -3,30 +3,38 @@ package homework_Zaur;
 // и увеличивает баланс на сумму,которая указана в параметре этого метода.
 // второй метод называеться snyatieSoScheta и уменьшает баланс на сумму,которая указана в параметре этого метода.
 public class BankAccount {
-    double balance;
+    //три переменные
+    int id=10;
+    String name="Вася";
+    double balance=100;
 
 
-    double popolnenieScheta (double plus){
+    // 2 метода
+
+    void popolnenieScheta (double plus){
+        //для читабельности и красоты вывода пишем много строк
+        //тело метода
+        System.out.println("Баланс до пополнения: " + balance);
+        System.out.println("Баланс пополнился на: " + plus);
         balance+=plus;
-        return balance;
-    }
-    double snyatieSoScheta(double minus){
-        balance-=minus;
-        return balance;
-    }
-    void showInfo(){
-        System.out.println("ваш счет изменился и сумма на нем: "+ balance);
+        System.out.println("Баланс после пополнения: " + balance);
+        System.out.println();
 
     }
+    void snyatieSoScheta(double minus){
+        System.out.println("Баланс до пополнения: " + balance);
+        System.out.println("Баланс уменьшился на: " + minus);
+        balance-=minus;
+        System.out.println("Баланс после уменьшения: " + balance);
+        System.out.println();
+    }
+
 }
 class BankAccountTest{
     public static void main(String[] args) {
         BankAccount bA=new BankAccount();
-        bA.balance=124.23;
-        bA.popolnenieScheta(145.34);
-        bA.showInfo();
-        bA.snyatieSoScheta(104.45);
-        bA.showInfo();
+       bA.popolnenieScheta(48.89);
+       bA.snyatieSoScheta(23.76);
     }
 }
 

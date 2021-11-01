@@ -11,7 +11,7 @@ public class LessonMetod {
 
     //это пример - метод в методе правило LiFo
     int sredneeArifm(int a1, int b1, int c1){
-        int result2=summa(a1,b1,c1);
+        int result2=summa(a1,b1,c1)/3;
         return result2;
     }
 }
@@ -21,13 +21,13 @@ class LessonMetodYest {
         //т.к метод sum принадлежит LessonMetod мы должны создать объект
         LessonMetod t = new LessonMetod();
         //вызов метода(method coll)
-        int summaTrexChisel = t.summa(10, 5, 12);
+        int summaTrexChisel = t.summa(2, 3, 4);
         System.out.println(summaTrexChisel);
         //можно и так
-        System.out.println(t.summa(12, 2, 34));
+        System.out.println(t.summa(3, 4, 5));
 
 
         //выводим результат 2 метода
-        System.out.println(t.sredneeArifm(20,45,79));
+        System.out.println(t.sredneeArifm(1,2,3));
     }
 }
