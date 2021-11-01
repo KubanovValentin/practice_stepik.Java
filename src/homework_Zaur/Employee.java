@@ -6,34 +6,41 @@ package homework_Zaur;
 //увеличить зараплату каждому работнику вдвое с помощью метода
 // и выведите на экран значение новой зарплаты
 public class Employee {
-    Employee() {
-
-    }
-
+    //переменные класса
     int id;
     String surname;
     int age;
     double salary;
-    int department;
+    String department;
+    //конструктор,при создании объекта надо вводить все параметры
+    Employee(int id2, String surname2, int age2, double salary2, String department2){
+        id=id2;
+        surname=surname2;
+        age=age2;
+        salary=salary2;
+        department=department2;
+    }
+    //метод(не принимает ни каких параметров)
+    double uvelichZarplat(){
+        salary*=2;
+        return salary;
+    }
+
 }
-
+//создаем класс
 class EmployeeTest {
+    //метод майн
     public static void main(String[] args) {
-        Employee h1 = new Employee();
-        h1.id = 214;
-        h1.surname = "Пупкин";
-        h1.age = 35;
-        h1.salary = 768.567;
-        h1.department = 13;
+        //два объекта класса Employee
+        Employee emp1=new Employee(1,"Вася",25,234_987.45,"IT");
+        Employee emp2=new Employee(13,"Петя",43,432_987.05,"IT");
 
+        //с помощью переменной вызываем метод
+        emp1.uvelichZarplat();
+        System.out.println("Новая зарплата работника: "+ emp1.surname+" : "+ emp1.salary);
 
-        Employee h2 = new Employee();
-        h2.id = 359;
-        h2.surname = "Папкин";
-        h2.age = 21;
-        h2.salary = 374.128;
-        h2.department = 13;
-
-
+        double newSalary = emp2.uvelichZarplat();
+        System.out.println("Новая зарплата работника: "+ emp2.surname+" : "+ newSalary);
     }
 }
+
