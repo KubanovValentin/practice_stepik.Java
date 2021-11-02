@@ -76,8 +76,8 @@ class  StudentConstrTest{
         System.out.println();
 
         StudentConstr st2=new StudentConstr(23,"Jek","Travolt",1);
-        System.out.println("Этот студент: "+st2.surname+" "+st2.surname+" только поступил на курс " + st2.curse);
-
+        System.out.println("Этот студент: "+st2.name+" "+st2.surname+" только поступил на курс " + st2.curse);
+        System.out.println();
         StudentConstr st3=new StudentConstr();
     }
 }
