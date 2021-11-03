@@ -11,6 +11,7 @@ public class BankAccount {
 
 class BankAccountTest{
     public static void main(String[] args) {
+
         //создаем объекты
         //адрес объектов это (MyAccount, YourAccount, HisAccount)
         BankAccount MyAccount = new BankAccount();
@@ -32,5 +33,7 @@ class BankAccountTest{
         HisAccount.id = 3;
         HisAccount.name = "Petr";
         HisAccount.balance = 0.99;
+
+
     }
 }
