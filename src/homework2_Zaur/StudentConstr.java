@@ -1,5 +1,12 @@
 package homework2_Zaur;
 
+//измените класс Student так, чтобы он имел 3 конструктора.
+// 1 принимает все параметры.
+// 2 только id, name, surname, course.
+// 3 не принимает значений.
+// создайте в классе StudentTest 3 объекта с помощью разных конструкторов.
+
+
 public class StudentConstr {
     StudentConstr(){
         System.out.println("Ждем.....");
