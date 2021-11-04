@@ -1,11 +1,12 @@
 package Zaur_OOP.podpacet;
 
 public class Employee {
-     protected double salary;
-     protected void dvoinajZP(){
-        System.out.println("novaya z/p= " +salary*2);
+     public double salary;
+     public void dvoinajZP(){
+         double result=salary*2;
+        System.out.println("novaya z/p= " +result);
     }
-     protected Employee(double salary2){
+     public Employee(double salary2){
         salary=salary2;
     }
 
