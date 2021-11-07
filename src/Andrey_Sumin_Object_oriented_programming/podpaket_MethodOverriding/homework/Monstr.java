@@ -38,7 +38,7 @@ public class Monstr {
     }
     void voice(int i,String word){
         for (int x=0;x<i;x++){
-//            System.out.println(String );
+           System.out.println(word);
         }
     }
 }
@@ -51,5 +51,6 @@ class Main {
         Monstr shiva=new Monstr(3,2,6);
         homo.voice();
         centav.voice(3);
+        shiva.voice(5,"я монстр шива");
     }
 }
