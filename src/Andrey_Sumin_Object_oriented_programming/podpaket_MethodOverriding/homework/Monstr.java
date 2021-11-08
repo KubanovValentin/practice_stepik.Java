@@ -29,7 +29,7 @@ public class Monstr {
         this.hands = shest;
     }
     void voice(){
-        System.out.println("голос");
+        System.out.println("рррррр");
     }
     void voice(int i){
        for (int x=0;x<i;x++){
