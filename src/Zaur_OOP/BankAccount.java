@@ -9,7 +9,7 @@ public class BankAccount {
 
 }
 
-class BankAccountTest{
+class BankAccountTest {
     public static void main(String[] args) {
 
         //создаем объекты
