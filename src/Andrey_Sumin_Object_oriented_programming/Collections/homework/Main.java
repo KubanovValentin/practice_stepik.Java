@@ -7,8 +7,7 @@ public class Main {
         String nameStr = strInfo.substring(4, 8);
         String postStr = strInfo.substring(54, 65);
         String ageStr = strInfo.substring(14, 16);
-        String s = ageStr;
-        int ageInt = Integer.parseInt(s);
+        int ageInt = Integer.parseInt(ageStr);
         String heightStr = strInfo.substring(32, 37);
         double heightDouble=Double.parseDouble(heightStr);
 
@@ -17,7 +16,9 @@ public class Main {
         Man man2=new Man(nameStr,ageInt,heightDouble);
         System.out.println(man.getName());
         System.out.println(man.getAge());
-        System.out.println(man1.getPost());
         System.out.println(man2.getHeight());
+        System.out.println(man1.getPost());
+        System.out.println(man.getName()+" "+man.getAge()+" года "+man2.getHeight()+" см "+ " он " +man1.getPost());
+
     }
 }
