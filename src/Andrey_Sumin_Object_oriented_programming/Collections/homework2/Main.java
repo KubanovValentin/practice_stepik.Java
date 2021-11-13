@@ -25,6 +25,7 @@ public class Main {
         names.add("Андрей");
         names.remove("Валентин");
         names.add("Светлана");
+
 //        for (String name:names) {
 //            System.out.println(name);
 //        }
