@@ -1,4 +1,4 @@
-package Andrey_Sumin_Object_oriented_programming.Collections.main.obolochki;
+package Andrey_Sumin_Object_oriented_programming.Collections.obolochki;
 
 public class Main {
     public static void main(String[] args) {

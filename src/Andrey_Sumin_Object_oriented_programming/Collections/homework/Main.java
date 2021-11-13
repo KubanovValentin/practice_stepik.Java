@@ -9,16 +9,16 @@ public class Main {
         String ageStr = strInfo.substring(14, 16);
         int ageInt = Integer.parseInt(ageStr);
         String heightStr = strInfo.substring(32, 37);
-        double heightDouble=Double.parseDouble(heightStr);
+        double heightDouble = Double.parseDouble(heightStr);
 
-        Man man=new Man(nameStr,ageInt);
-        Man  man1=new Man(postStr);
-        Man man2=new Man(nameStr,ageInt,heightDouble);
-        System.out.println(man.getName());
-        System.out.println(man.getAge());
-        System.out.println(man2.getHeight());
-        System.out.println(man1.getPost());
-        System.out.println(man.getName()+" "+man.getAge()+" года "+man2.getHeight()+" см "+ " он " +man1.getPost());
+        Man man = new Man(nameStr, ageInt);
+        Man man1 = new Man(postStr);
+        Man man2 = new Man(nameStr, ageInt, heightDouble);
+//        System.out.println(man.getName());
+//        System.out.println(man.getAge());
+//        System.out.println(man2.getHeight());
+//        System.out.println(man1.getPost());
+        System.out.println(man.getName() + " " + man.getAge() + " года " + man2.getHeight() + " см " + " он " + man1.getPost());
 
     }
 }

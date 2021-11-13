@@ -5,29 +5,35 @@ public class Man {
     private String post;
     private int age;
     private double height;
-    public Man(String nameStr,int ageInt){
-        this.name=nameStr;
-        this.age=ageInt;
+
+    public Man(String nameStr, int ageInt) {
+        this.name = nameStr;
+        this.age = ageInt;
     }
-    public Man(String postStr){
-        this.post=postStr;
+
+    public Man(String postStr) {
+        this.post = postStr;
     }
-    public Man(String nameStr,int ageInt,double heightDouble){
-        this.name=nameStr;
-        this.age=ageInt;
-        this.height=heightDouble;
+
+    public Man(String nameStr, int ageInt, double heightDouble) {
+        this.name = nameStr;
+        this.age = ageInt;
+        this.height = heightDouble;
     }
-public String getName(){
+
+    public String getName() {
         return name;
     }
 
-public int getAge(){
-      return age;
+    public int getAge() {
+        return age;
     }
-    public String getPost(){
+
+    public String getPost() {
         return post;
     }
-public double getHeight() {
+
+    public double getHeight() {
         return height;
     }
 }
