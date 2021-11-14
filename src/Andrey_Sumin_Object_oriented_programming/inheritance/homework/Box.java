@@ -23,30 +23,9 @@ public class Box {
         length = 0;
     }
 
-    public Box(Box box) {
-        this.width = box.width;
-        this.height = box.height;
-        this.length = box.length;
-    }
-
-//    double volume() {
-//        return width * height * length;
-//    }
-
     public void showInfo() {
         System.out.println("Ширина: " + width);
         System.out.println("Длина: " + length);
         System.out.println("Высота: " + height);
     }
-//    public double getWidth() {
-//        return width;
-//    }
-//
-//    public double getHeight() {
-//        return height;
-//    }
-//
-//    public double getLength() {
-//        return length;
-//    }
 }
