@@ -7,5 +7,7 @@ public class Main {
         System.out.println(cat.bigClaws);
         cat.showInfo();
         lion.showInfo();
+        cat.eat();
+        lion.eat();
     }
 }
