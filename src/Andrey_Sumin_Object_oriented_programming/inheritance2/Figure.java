@@ -1,15 +1,22 @@
 package Andrey_Sumin_Object_oriented_programming.inheritance2;
 
-public class Figure {
-    public int a;
-    public int b;
+public abstract class Figure {
+   private double a;
+   private double b;
 
-    public Figure(int a, int b) {
+    public Figure(double a, double b) {
         this.a = a;
         this.b = b;
     }
-    public void sqr(){
-        int result=2*(a+b);
-        System.out.println(result);
+    public abstract double area();
+
+    //создадим доступ к сторонам через гетерры
+
+    public final double getA() {
+        return a;
+    }
+
+    public final double getB() {
+        return b;
     }
 }
