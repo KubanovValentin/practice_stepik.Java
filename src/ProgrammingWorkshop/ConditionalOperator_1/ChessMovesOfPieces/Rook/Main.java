@@ -1,4 +1,4 @@
-package ProgrammingWorkshop.ConditionalOperator_1.Rook;
+package ProgrammingWorkshop.ConditionalOperator_1.ChessMovesOfPieces.Rook;
 
 import java.util.Scanner;
 
