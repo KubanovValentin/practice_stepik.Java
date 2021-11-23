@@ -1,5 +1,5 @@
 package ProgrammingWorkshop.ConditionalOperator_2.IceСream;
-
+//не решенная
 import java.util.Scanner;
 
 public class Main {
