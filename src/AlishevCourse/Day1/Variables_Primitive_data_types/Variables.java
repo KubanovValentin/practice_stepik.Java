@@ -1,4 +1,4 @@
-package AlishevCourse.Variables_Primitive_data_types;
+package AlishevCourse.Day1.Variables_Primitive_data_types;
 
 public class Variables {
     public static void main(String[] args) {
