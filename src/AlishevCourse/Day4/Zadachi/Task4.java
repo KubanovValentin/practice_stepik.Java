@@ -18,11 +18,11 @@ public class Task4 {
             }
             if (sum > maxSum) {
                 maxSum = sum;
-                maxSumInx=i;
+                maxSumInx = i;
             }
         }
-        System.out.println(maxSum);
-        System.out.println(maxSumInx);
+        System.out.println("тройка с максимальной суммой: " + maxSum);
+        System.out.println("индекс первого элемента тройки: " + maxSumInx);
 
     }
 }
