@@ -1,4 +1,4 @@
-package AlishevCourse.Day10.GenericsIntroduction_to_Parameterization;
+package AlishevCourse.Day10.Generics_Introduction_to_Parameterization;
 
 import AlishevCourse.Day9.Polymorphism.Animal;
 
