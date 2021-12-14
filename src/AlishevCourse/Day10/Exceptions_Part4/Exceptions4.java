@@ -11,9 +11,7 @@ public class Exceptions4 {
         }  catch (Exception e){//если ловим класс родителя то дальше ловить исключения не имеет смысла
 
         }
-
-
-
+        
 //        } catch (IOException  | ParseException e) {
 //            e.printStackTrace();
 //        }
