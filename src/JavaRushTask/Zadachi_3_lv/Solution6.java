@@ -1,4 +1,4 @@
-package JavaRushTask.Zadachi;
+package JavaRushTask.Zadachi_3_lv;
 /*
 Ввести с клавиатуры температуру на улице.
 Если температура меньше 0,

@@ -1,4 +1,4 @@
-package JavaRushTask.Zadachi;
+package JavaRushTask.Zadachi_3_lv;
 /*
 В методе main на экран выводятся значения трех строк.
 Внеси изменения в код, чтобы вместо значений строк вывелась длина каждой строки.

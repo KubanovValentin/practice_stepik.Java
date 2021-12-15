@@ -1,4 +1,4 @@
-package JavaRushTask.Zadachi;
+package JavaRushTask.Zadachi_3_lv;
 /*
 В методе main на экран выводятся три строки.
 Внеси изменения в код, чтобы все буквы в этих строках стали заглавными.

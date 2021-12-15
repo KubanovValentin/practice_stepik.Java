@@ -1,4 +1,4 @@
-package JavaRushTask.Zadachi;
+package JavaRushTask.Zadachi_3_lv;
 /*
 В переменную hugeAmount нужно записать число 100500.
 Используй переменные bigAmount, greatAmount и преобразование строки в число.

@@ -1,4 +1,4 @@
-package JavaRushTask.Zadachi;
+package JavaRushTask.Zadachi_3_lv;
 
 import java.util.Scanner;
 
