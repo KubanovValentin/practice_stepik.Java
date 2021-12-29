@@ -9,7 +9,10 @@ public class Test {
 
     public static void main(String[] args)
     {
-        //Вызываем метод printLines с разными параметрами
+        // Вызываем метод printLines с разными параметрами
+        // Вызываем метод printLines с параметрами
+        // text = "Привет"; count = 10;
+        // text = "Пока"; count = 20;
         printLines("Привет", 10);
         printLines("Пока", 20);
     }
