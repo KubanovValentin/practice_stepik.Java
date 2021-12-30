@@ -1,6 +1,6 @@
 package AlishevCourse.Day5.Access_modifiers_public_private_protected_and_default.Packet1;
 
-public class Person {
+public class Person1 {
 //    public String name;//нельзя открытые поля, инкапсуляция должна быть
     //можно делать ниже
     public final static String CONSTANT="CONSTANT";
