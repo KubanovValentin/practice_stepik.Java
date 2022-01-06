@@ -1,4 +1,4 @@
-package JavaRushTaskSt.Zadachi_7.LV_methods.Real_types;
+package JavaRushTaskSt.Zadachi_8.LV.Real_types;
 /*
 Перед тобой 5 общеизвестных величин.
 Перепиши их в более читаемый формат — экспоненциальный. Мантиcса должна представлять собой дробное число от 1.0 до 10.

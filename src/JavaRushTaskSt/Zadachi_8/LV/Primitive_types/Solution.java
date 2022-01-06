@@ -1,4 +1,4 @@
-package JavaRushTaskSt.Zadachi_7.LV_methods.Primitive_types;
+package JavaRushTaskSt.Zadachi_8.LV.Primitive_types;
 /*
 Как тебе уже известно, всего в языке Java 8 примитивных типов.
 Создай по одной переменной каждого примитивного типа в классе Solution.

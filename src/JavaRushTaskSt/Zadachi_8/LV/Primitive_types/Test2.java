@@ -1,4 +1,4 @@
-package JavaRushTaskSt.Zadachi_7.LV_methods.Primitive_types;
+package JavaRushTaskSt.Zadachi_8.LV.Primitive_types;
 
 public class Test2 {
     public static void main(String[] args) {

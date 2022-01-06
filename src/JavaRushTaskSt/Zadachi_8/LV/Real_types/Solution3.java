@@ -1,4 +1,4 @@
-package JavaRushTaskSt.Zadachi_7.LV_methods.Real_types;
+package JavaRushTaskSt.Zadachi_8.LV.Real_types;
 /*
 В методе main вызови метод div() с таким аргументам, чтобы вывод в консоли был "NaN".
 Код метода div() изменять нельзя.

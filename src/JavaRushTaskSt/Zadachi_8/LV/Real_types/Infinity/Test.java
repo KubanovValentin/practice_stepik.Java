@@ -1,4 +1,4 @@
-package JavaRushTaskSt.Zadachi_7.LV_methods.Real_types.Infinity;
+package JavaRushTaskSt.Zadachi_8.LV.Real_types.Infinity;
 
 public class Test {
     public static void main(String[] args) {

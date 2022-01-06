@@ -1,4 +1,4 @@
-package JavaRushTaskSt.Zadachi_7.LV_methods.Real_types;
+package JavaRushTaskSt.Zadachi_8.LV.Real_types;
 /*
 В методе main вызови метод div() 2 раза.
 Первый раз — с такими аргументами, чтобы вывод в консоли был "Infinity", а второй — "-Infinity".

@@ -1,4 +1,4 @@
-package JavaRushTaskSt.Zadachi_7.LV_methods.Primitive_types;
+package JavaRushTaskSt.Zadachi_8.LV.Primitive_types;
 /*
 Создай по одной переменной каждого примитивного целочисленного типа в классе Solution.
 Этим переменным присвой минимально возможное для них значение.

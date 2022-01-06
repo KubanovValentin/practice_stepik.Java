@@ -1,7 +1,6 @@
-package JavaRushTaskSt.Zadachi_7.LV_methods.Create_a_memory_area_buffer;
+package JavaRushTaskSt.Zadachi_8.LV.Create_a_memory_area_buffer;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
