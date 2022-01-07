@@ -8,4 +8,11 @@ public class Solution2 {
     int b = (int) (a * 2);
     short c = (short)(a / b);
     byte d =(byte) (a + b - c);
+
+    public static void main(String[] args) {
+        int a1=0;
+        int b1=0;
+        int c=a1/b1;
+        System.out.println(c);
+    }
 }
