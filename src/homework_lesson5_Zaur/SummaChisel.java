@@ -1,4 +1,4 @@
-package homework2_Zaur;
+package homework_lesson5_Zaur;
 
 public class SummaChisel {
     double summa(double a, double b) {
