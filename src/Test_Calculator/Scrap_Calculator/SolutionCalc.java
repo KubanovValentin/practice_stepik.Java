@@ -1,4 +1,5 @@
 package Test_Calculator.Scrap_Calculator;
+
 /*
 Давай проведем рефакторинг кода: вынесем отдельно утильные методы.
 Для этого создай внутренний статический (вложенный) класс Calculator и перенеси в него методы add, subtract, multiply и divide.
@@ -8,18 +9,17 @@ public class SolutionCalc {
     public static final String EQUAL = " = ";
 
     public static void main(String[] args) {
-       SolutionCalc.Calculator calculator=new SolutionCalc.Calculator();
+        SolutionCalc.Calculator calculator = new SolutionCalc.Calculator();
         int a = 45;
         int b = 15;
         calculator.add(a, b);
         calculator.subtract(a, b);
         calculator.multiply(a, b);
-        calculator.divide(a, b);
+        calculator.divide(a, b);/**/
     }
 
 
-
-    static class Calculator{
+    static class Calculator {
         public static void add(int a, int b) {
             System.out.println(a + " + " + b + EQUAL + (a + b));
         }
