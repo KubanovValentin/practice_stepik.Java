@@ -6,7 +6,7 @@ public class Car {
     //будем считывать количество машин которые создали count
     static int count;
     //   создаем конструктор
-    Car(String color2, String engine2){
+    public Car(String color2, String engine2){
         count++;
         color=color2;
         engine=engine2;

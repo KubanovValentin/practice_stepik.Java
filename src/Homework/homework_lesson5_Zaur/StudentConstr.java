@@ -1,4 +1,4 @@
-package homework_lesson5_Zaur;
+package Homework.homework_lesson5_Zaur;
 
 //измените класс Student так, чтобы он имел 3 конструктора.
 // 1 принимает все параметры.

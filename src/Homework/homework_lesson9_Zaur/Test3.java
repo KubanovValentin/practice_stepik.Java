@@ -1,4 +1,4 @@
-package homework_lesson9;
+package Homework.homework_lesson9_Zaur;
 
 public class Test3 {
     int a=1;

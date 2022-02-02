@@ -1,4 +1,4 @@
-package homework_assignment;
+package Homework.homework_assignment;
 
 //Создать класс Dog(собака), в котором будет 3 поля: String кличка, String порода, int скорость.
 // Создать внутри класса два метода:

@@ -1,4 +1,4 @@
-package homework_lesson9;
+package Homework.homework_lesson9_Zaur;
 
 public class Lesson9 {
     public static void abc(){

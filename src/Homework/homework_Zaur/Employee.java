@@ -1,4 +1,4 @@
-package homework_Zaur;
+package Homework.homework_Zaur;
 
 //создайте класс Employee с атрибутами id, surname, age, salary, department, которые должны задаваться в конструкторе.
 // в данном классе также создайте метод увеличения зарплаты вдвое.

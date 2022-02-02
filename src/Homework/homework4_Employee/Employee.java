@@ -1,4 +1,4 @@
-package homework4.Employee;
+package Homework.homework4_Employee;
 
 
 //пересоздайте класс Employee таким образом, чтобы, переменная salary была не доступна вне класса,

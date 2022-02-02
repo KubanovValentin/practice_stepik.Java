@@ -1,4 +1,4 @@
-package homework_assignment;
+package Homework.homework_assignment;
 
 public class Dog {
     String nickname;

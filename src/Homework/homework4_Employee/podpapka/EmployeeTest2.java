@@ -1,11 +1,13 @@
-package homework4.Employee.podpapka;
+package Homework.homework4_Employee.podpapka;
 
 //создайте новые классы  в другов пакете
 
 
+import Homework.homework4_Employee.Employee;
+
 public class EmployeeTest2 {
     public static void main(String[] args) {
-        homework4.Employee.Employee emp1 = new homework4.Employee.Employee(5);
+        Employee emp1 = new Employee(5);
 //        homework4.Employee.Employee emp2 =new homework4.Employee.Employee("Petrov");       //       default
 //        homework4.Employee.Employee emp3 =new homework4.Employee.Employee(4324.454);      //        private
 
