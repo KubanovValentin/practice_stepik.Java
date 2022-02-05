@@ -1,3 +1,4 @@
+
 package Test_Calculator.podpaket_Calculator_glavn;
 
 import java.util.Scanner;
@@ -17,8 +18,6 @@ public class Calculator {
     String umn = "*";
     String del = "/";
     String stop = "end";
-
-
 
 }
 

@@ -19,12 +19,12 @@ public class Calculator {
     String stop = "end";
 
 
-
 }
-class CalculatorTest{
+
+class CalculatorTest {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        Calculator calculator=new Calculator();
+        Calculator calculator = new Calculator();
         boolean isExit = false;
         System.out.println(calculator.str0);
         while (!isExit) {
