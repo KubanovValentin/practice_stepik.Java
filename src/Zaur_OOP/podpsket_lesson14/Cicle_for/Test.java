@@ -1,4 +1,4 @@
-package Zaur_OOP.podpsket_lesson13.Cicle_for;
+package Zaur_OOP.podpsket_lesson14.Cicle_for;
 
 
 public class Test {
