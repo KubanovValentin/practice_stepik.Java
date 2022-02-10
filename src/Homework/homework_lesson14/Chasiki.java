@@ -6,16 +6,17 @@ public class Chasiki {
         for (int ch = 0; ch <= 6; ch++) {
             INNER_SER:
             for (int min = 0; min < 60; min++) {
+                if (ch > 1 && min % 10 == 0) {
+                    break OUTER;
+                }
                 INNER_NIS:
                 for (int sek = 0; sek < 60; sek++) {
                     System.out.println(ch + ":" + min + ":" + sek);
                     if (sek * ch > min) {
-                        continue INNER_NIS;
+                        continue INNER_SER;
                     }
                 }
-                if (ch > 1 && min % 10 == 0) {
-                    break OUTER;
-                }
+
             }
         }
     }

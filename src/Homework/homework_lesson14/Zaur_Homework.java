@@ -12,7 +12,7 @@ public class Zaur_Homework {
                 INNER:
                 for (int sekunda = 0; sekunda < 60; sekunda++) {
                     if (sekunda * chas > minuta) {
-                        continue INNER;
+                        continue MIDDLE;
                     }
                     System.out.println(chas + ":" + minuta + ":" + sekunda);
                 }
