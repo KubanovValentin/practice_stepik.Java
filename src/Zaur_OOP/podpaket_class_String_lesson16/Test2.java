@@ -1,4 +1,4 @@
-package Zaur_OOP.podpaket_class_String;
+package Zaur_OOP.podpaket_class_String_lesson16;
 
 public class Test2 {
     public static void main(String[] args) {
