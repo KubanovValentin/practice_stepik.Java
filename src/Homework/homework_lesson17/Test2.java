@@ -23,9 +23,9 @@ class Test3 {
         StringBuilder sb4=new StringBuilder("hello");
         StringBuilder sb5=new StringBuilder("hello");
         boolean a=Test2.ravenstvo(sb3,sb4);
-        System.out.println(a);
-        System.out.println(Test2.ravenstvo(sb3,sb4));
-        System.out.println(Test2.ravenstvo(new StringBuilder(" "),new StringBuilder(",")));
-        System.out.println(Test2.ravenstvo(new StringBuilder(),new StringBuilder()));
+        System.out.println(a);//true
+        System.out.println(Test2.ravenstvo(sb3,sb4));//true
+        System.out.println(Test2.ravenstvo(new StringBuilder(" "),new StringBuilder(",")));//false
+        System.out.println(Test2.ravenstvo(new StringBuilder(),new StringBuilder()));//true
     }
 }
