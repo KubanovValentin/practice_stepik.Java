@@ -4,6 +4,7 @@ public class Test3 {
     public static void main(String[] args) {
         int[] array3 = new int[7];
 
+        int d[],b[][];
         int[] array2 = {2, 5, 9};
 
         int[] array1;
