@@ -11,6 +11,8 @@ public class Test2 {
         list.add(sb1);
         list.add(sb2);
         list.add(sb3);
+        list.set(0,new StringBuilder("stop"));
+        list.add(3,new StringBuilder("Valentin"));
 
         for (int i=0;i< list.size();i++){
             list.get(i).append("!!!");

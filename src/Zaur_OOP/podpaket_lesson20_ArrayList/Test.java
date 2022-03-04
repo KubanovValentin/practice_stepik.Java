@@ -35,6 +35,7 @@ public class Test {
         for (StringBuilder sb:list3){
             System.out.println(sb);
         }
+        System.out.println(list.toString());
     }
 
 }
