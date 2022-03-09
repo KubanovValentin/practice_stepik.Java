@@ -1,6 +1,8 @@
 package Zaur_OOP.podpaket_lesson20_ArrayList;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class Test3 {
     public static void main(String[] args) {
@@ -24,5 +26,12 @@ public class Test3 {
 //        for (int i=0;i< array2.length;i++){
 //            System.out.print(array2[i].toString());
 //        }
+
+        StringBuilder[]array3={sb2,sb3,sb2,sb3};
+        List<StringBuilder>list8= Arrays.asList(array3);
+        System.out.println(list8);
+        array3[0].append("!");
+        System.out.println(list8);
+
     }
 }
