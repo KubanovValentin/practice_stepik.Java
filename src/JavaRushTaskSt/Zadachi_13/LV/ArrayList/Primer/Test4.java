@@ -1,2 +1,26 @@
-package JavaRushTaskSt.Zadachi_13.LV.ArrayList.Primer;public class Test4 {
+package JavaRushTaskSt.Zadachi_13.LV.ArrayList.Primer;
+
+import java.util.ArrayList;
+
+/*
+Удаление элементов:
+
+А теперь давайте удалим все элементы, которые делятся на 4.
+Обратите внимание, что сразу после удаления одного элемента из списка позиции остальных элементов меняются.
+ */
+public class Test4 {
+    public static void main(String[] args) {
+        ArrayList<Integer> list = new ArrayList<Integer>();//    Создаем объект-список
+
+        for (int i = 1; i <= 20; i++)//         цикл по всем числам 1 .. 20
+            if (i%2 == 0)//                     если число делится на 2 без остатка,
+                list.add(i);//                  добавить его в список.
+
+        for (int i = 0; i < list.size(); i++)//цикл от нуля до размера списка
+            if (list.get(i)%4 == 0)//        если элемент списка делится на 4 без остатка:
+            {
+                list.remove(i);//            а) удаляем элемент
+                i--;//                       б) уменьшаем счетчик i, чтобы на следующем витке цикла опять попасть на тот же элемент
+            }
+    }
 }
