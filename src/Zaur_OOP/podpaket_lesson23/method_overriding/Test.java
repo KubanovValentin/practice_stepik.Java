@@ -10,7 +10,17 @@ public class Test {
 
         Teacher t = new Teacher();
         t.eat();
+        t.eatEda();
+
     }
+}
+
+class Eda {
+
+}
+
+class Fructi extends Eda {
+
 }
 
 class Employee {
@@ -19,6 +29,12 @@ class Employee {
     int age;
     int experience;
 
+    Eda eatEda() {
+        System.out.println("кушает еду");
+        Eda e = new Eda();
+        return e;
+
+    }
 
     void eat() {
         System.out.println("кушает работник");
@@ -29,8 +45,24 @@ class Employee {
     }
 }
 
+
+
 class Teacher extends Employee {
     int kolichestvoUchenikov;
+
+    //    Eda eatEda(){
+//        System.out.println("кушает еду учитель");
+//        Eda e=new Eda();
+//        return e;
+//
+//    }
+    @Override //ковыриантый
+    Fructi eatEda() {
+        System.out.println("кушает еду(f) учитель ");
+        Fructi f = new Fructi();
+        return f;
+
+    }
 
     @Override
     void eat() {
@@ -41,4 +73,17 @@ class Teacher extends Employee {
         System.out.println("учить");
     }
 
+}
+class A {
+    Employee objectCreation(){
+       return new Employee();
+    }
+}
+
+class B extends A {
+    @Override
+    Teacher objectCreation(){
+        System.out.println("ok");
+        return new Teacher();
+    }
 }
