@@ -3,14 +3,14 @@ package Zaur_OOP.podpaket_lesson23.method_overriding;
 public class Test {
     public static void main(String[] args) {
         Employee e = new Employee();
-        e.eat();
+//        e.eat();
 
         Employee et = new Teacher();
         et.eat();
 
         Teacher t = new Teacher();
-        t.eat();
-        t.eatEda();
+ //       t.eat();
+//        t.eatEda();
 
     }
 }
