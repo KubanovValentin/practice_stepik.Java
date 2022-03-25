@@ -46,7 +46,8 @@ class Teacher extends Employee {
     int kolichestvoUchenikov;
 
 
-    @Override //ковыриантый
+    @Override
+        //ковыриантый
     Frukti eatEda() {
         System.out.println("кушает еду(f) учитель ");
         Frukti f = new Frukti();
@@ -68,7 +69,7 @@ class Teacher extends Employee {
     public void sleep() {
         System.out.println("спит учитель");
     }
-
+//hiding
     static void hodit(){
         System.out.println("ходит учитель");
     }
