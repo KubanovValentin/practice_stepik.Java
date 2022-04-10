@@ -50,7 +50,7 @@ abstract class Bird extends Animal implements Speakable {
     @Override
     public void speak() {
         Speakable.super.speak();
-        System.out.println(name + "sings//поет");
+        System.out.println(name + " sings//поет");
     }
 }
 
@@ -176,5 +176,27 @@ class Lesson24 {
         mechenosec.swim();
         mechenosec.sleep();
         System.out.println("2.");
+
+        Speakable speakable=new Pingvin("PINGV1");
+        speakable.speak();
+        Pingvin pingvin=new Pingvin("PINGV2");
+        pingvin.eat();
+        pingvin.speak();
+        pingvin.sleep();
+        pingvin.fly();
+        System.out.println("3.");
+
+        Animal animal=new Lev("LEVA_animal");
+        System.out.println(animal.name);
+        animal.eat();
+        animal.sleep();
+        System.out.println("4.");
+
+        Mammal mammal=new Lev("LEVA_mammal");
+        System.out.println(mammal.name);
+        mammal.speak();
+        mammal.eat();
+        mammal.sleep();
+        mammal.run();
     }
 }
