@@ -6,6 +6,7 @@ public class Test3 {
         Employee1 emp2 = new Teacher1();
         Employee1 emp3 = new Driver1();
         Help_able1 h1 = new Doctor1();
+        Employee1 e=new Employee1();
 
         Doctor1 d1 = (Doctor1) emp1;//downcasting
         d1.heals();
@@ -17,6 +18,11 @@ public class Test3 {
         System.out.println(((Doctor1) h1).specializaciya);
         ((Doctor1) h1).heals();
         ((Doctor1) h1).help();
+
+        h1.help();
+        System.out.println(e==emp1);
+        System.out.println(e.equals(emp1));
+
     }
 }
 
