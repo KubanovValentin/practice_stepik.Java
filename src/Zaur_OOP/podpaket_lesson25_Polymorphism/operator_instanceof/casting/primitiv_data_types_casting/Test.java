@@ -21,6 +21,15 @@ public class Test {
             short sh1 = a;
             System.out.println(sh1);
         }
+        {
+            int i = 5;
+            long l = 10;
+            i = (int) (i * l);
+            i *= l;
+            System.out.println(i + l);
+        }
+        {
 
+        }
     }
 }
