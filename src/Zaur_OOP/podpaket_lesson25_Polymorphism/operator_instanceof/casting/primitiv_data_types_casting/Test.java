@@ -2,11 +2,13 @@ package Zaur_OOP.podpaket_lesson25_Polymorphism.operator_instanceof.casting.prim
 
 public class Test {
     public static void main(String[] args) {
+
         {
             byte b = 10;
             int a = b;//это и есть расширение
             System.out.println(a);
         }
+
         {
             byte b2 = 3;//3 это инт и он переходит в байт
             short s1 = -6;// это инт и он переходит в шорт
@@ -21,6 +23,7 @@ public class Test {
             short sh1 = a;
             System.out.println(sh1);
         }
+
         {
             int i = 5;
             long l = 10;
@@ -28,8 +31,18 @@ public class Test {
             i *= l;
             System.out.println(i + l);
         }
+
+        {
+            byte b = 10;//
+            float f = 13;
+            double d = 15.5;
+            var v = b + f + d;
+            System.out.println(v);
+        }
         {
 
         }
+
+
     }
 }

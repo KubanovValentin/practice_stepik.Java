@@ -87,7 +87,7 @@ interface Speakable {
 он выводил на экран "Mechenosec не хищная рыба, и она ест обычный рыбный корм!".
  */
 class Mechenosec extends Fish {
-    public Mechenosec(String name) {
+    public Mechenosec(String name ) {
         super(name);
         this.name = name;
     }
