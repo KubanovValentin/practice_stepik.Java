@@ -1,6 +1,6 @@
 package Zaur_OOP.podpaket_lesson27_exceptions_and_mistakes;
 
-public class Test1 {
+public class  Test1 {
     public static void main(String[] args) {
         int array[]={3,1,5};
 //   System.out.println(array[5]);-->
