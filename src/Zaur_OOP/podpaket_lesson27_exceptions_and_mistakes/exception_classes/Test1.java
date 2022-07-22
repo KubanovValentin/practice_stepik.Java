@@ -9,10 +9,10 @@ public class Test1 {
 //        }
 
         try {
-            System.out.println(array[5]);
+            System.out.println(array[6]);
             System.out.println("good luck");
         } catch (ArrayIndexOutOfBoundsException e) {//ArrayIndexOutOfBoundsException-тип,имя-e
-            System.out.println("was caught Exception  -  :" + e);
+            System.out.println("was caught Exception  -  " + "( " + e + " )");
         } finally {
             System.out.println("finally block");
         }

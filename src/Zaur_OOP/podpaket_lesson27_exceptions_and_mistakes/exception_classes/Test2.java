@@ -5,12 +5,13 @@ public class Test2 {
         File f = new File("test3");
         try {
             FileInputStream fis =new FileInputStream(f);
-            System.out.println("123");
-        }
-        catch (FileNotFoundException e) {
+            System.out.println("file exist and code it worked");
+        }catch (FileNotFoundException e) {
             System.out.println("was caught Exception  -  :" + e);
-        }finally {
-            System.out.println("finally block");
+        }catch (NullPointerException e1){
+            System.out.println("was caught Exception  -  :" + e1);
+        }finally {//можно не писать необязательный
+            System.out.println("finally block and always is worked");
         }
     }
 }
