@@ -37,6 +37,9 @@ public class Test20 {
         //------------------------------------
         /*NumberFormatException
         System.out.println(Integer.parseInt("44dfsdfsd"));
+        //-------------------------------------------------
+        //NumberFormatException нет 16 система счисления
+        System.out.println(Integer.parseInt("44ab",16));
          */
 
 
