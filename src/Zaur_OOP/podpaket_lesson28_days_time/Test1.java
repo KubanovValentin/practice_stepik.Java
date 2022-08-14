@@ -35,12 +35,12 @@ public class Test1 {
         //       System.out.println(ld2);
         ld = ld.plusDays(12);
         System.out.println(ld);
-        ld=ld.minusDays(2);
+        ld = ld.minusDays(2);
         System.out.println(ld);
         //метод чейни
-        LocalTime lt2=LocalTime.of(21,16,45);
+        LocalTime lt2 = LocalTime.of(21, 16, 45);
         System.out.println(lt2);
-        lt2=lt2.minusHours(1).plusSeconds(15).plusNanos(6);
+        lt2 = lt2.minusHours(1).plusSeconds(15).plusNanos(6);
         System.out.println(lt2);
     }
 }
