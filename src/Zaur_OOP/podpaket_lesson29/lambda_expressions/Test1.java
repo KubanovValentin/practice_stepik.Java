@@ -1,7 +1,5 @@
 package Zaur_OOP.podpaket_lesson29.lambda_expressions;
-
 import java.util.ArrayList;
-
 public class Test1 {
 
 }
