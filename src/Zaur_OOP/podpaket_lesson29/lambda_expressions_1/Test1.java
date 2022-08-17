@@ -47,72 +47,87 @@ class StudentInfo {
         list.add(st4);
         list.add(st5);
         StudentInfo si = new StudentInfo();
-        System.out.println("------------------------FindStudentsOverGrade------------------------------------------------------");
-        FindStudentsOverGrade fsog=new FindStudentsOverGrade();
-        si.testStudents(list,fsog);
-        System.out.println("------------------------FindStudentsUnderGrade------------------------------------------------------");
-        FindStudentsUnderGrade fsug=new FindStudentsUnderGrade();
-        si.testStudents(list,fsug);
-        System.out.println("------------------------FindStudentsOverAge------------------------------------------------------");
-        FindStudentsOverAge fsoa=new FindStudentsOverAge();
-        si.testStudents(list,fsoa);
-        System.out.println("------------------------FindStudentsUnderAge------------------------------------------------------");
-        FindStudentsUnderAge fsua=new FindStudentsUnderAge();
-        si.testStudents(list,fsua);
-        System.out.println("------------------------FindStudentsBySex------------------------------------------------------");
-        FindStudentsBySex bs=new FindStudentsBySex();
-        si.testStudents(list,bs);
-        System.out.println("------------------------FindStudentsMixCondition------------------------------------------------------");
-        FindStudentMixCondition mc=new FindStudentMixCondition();
-        si.testStudents(list,mc);
-        System.out.println("------------------------------------------------------------------------------");
+//        System.out.println("------------------------FindStudentsOverGrade------------------------------------------------------");
+//        FindStudentsOverGrade fsog=new FindStudentsOverGrade();
+//        si.testStudents(list,fsog);
+//        System.out.println("------------------------FindStudentsUnderGrade------------------------------------------------------");
+//        FindStudentsUnderGrade fsug=new FindStudentsUnderGrade();
+//        si.testStudents(list,fsug);
+//        System.out.println("------------------------FindStudentsOverAge------------------------------------------------------");
+//        FindStudentsOverAge fsoa=new FindStudentsOverAge();
+//        si.testStudents(list,fsoa);
+//        System.out.println("------------------------FindStudentsUnderAge------------------------------------------------------");
+//        FindStudentsUnderAge fsua=new FindStudentsUnderAge();
+//        si.testStudents(list,fsua);
+//        System.out.println("------------------------FindStudentsBySex------------------------------------------------------");
+//        FindStudentsBySex bs=new FindStudentsBySex();
+//        si.testStudents(list,bs);
+//        System.out.println("------------------------FindStudentsMixCondition------------------------------------------------------");
+//        FindStudentMixCondition mc=new FindStudentMixCondition();
+//        si.testStudents(list,mc);
+//        System.out.println("------------------------------------------------------------------------------");
 
+        System.out.println("------------------------FindStudentsOverGrade------------------------------------------------------");
+        si.testStudents(list,(Student st)->{return st.avgGrade > 8.5;});
+        System.out.println("---------");
+        si.testStudents(list,st->st.avgGrade <7);
+        System.out.println("------------------------FindStudentsUnderGrade------------------------------------------------------");
+        si.testStudents(list,(Student st)->{return st.avgGrade < 8;});
+        System.out.println("------------------------FindStudentsOverAge------------------------------------------------------");
+        si.testStudents(list,(Student st)->{return st.age > 25;});
+        System.out.println("------------------------FindStudentsUnderAge------------------------------------------------------");
+        si.testStudents(list,(Student st)->{return st.age < 25;});
+        System.out.println("------------------------FindStudentsBySex------------------------------------------------------");
+        si.testStudents(list,(Student st)->{return st.sex != 'м';});
+        System.out.println("------------------------FindStudentsMixCondition------------------------------------------------------");
+        si.testStudents(list,(Student st)->{return (st.avgGrade >  8.8 && st.age < 20 && st.sex == 'ж');});
     }
 }
-
+//лямбда выражения работают лишь тогда когда один всего лишь метод в интерфейсе(1 метод в интерфейсе)
+//это функциональный интерфейс(1 метод в интерфейсе)
 interface StudentChecks {
     boolean testStudent(Student s);
 }
 
-class FindStudentsOverGrade implements StudentChecks {
-
-    @Override
-    public boolean testStudent(Student s) {
-        return s.avgGrade > 8.5;
-    }
-}
-class FindStudentsUnderGrade implements StudentChecks {
-
-    @Override
-    public boolean testStudent(Student s) {
-        return s.avgGrade < 8;
-    }
-}
-class FindStudentsOverAge implements StudentChecks {
-
-    @Override
-    public boolean testStudent(Student s) {
-        return s.age > 25;
-    }
-}
-class FindStudentsUnderAge implements StudentChecks {
-
-    @Override
-    public boolean testStudent(Student s) {
-        return s.age < 25;
-    }
-}
-class FindStudentsBySex implements StudentChecks {
-
-    @Override
-    public boolean testStudent(Student s) {
-        return s.sex != 'м';
-    }
-}
-class FindStudentMixCondition implements StudentChecks {
-
-    @Override
-    public boolean testStudent(Student s) {
-        return (s.avgGrade >  8.8 && s.age < 20 && s.sex == 'ж');
-    }
-}
+//class FindStudentsOverGrade implements StudentChecks {
+//
+//    @Override
+//    public boolean testStudent(Student s) {
+//        return s.avgGrade > 8.5;
+//    }
+//}
+//class FindStudentsUnderGrade implements StudentChecks {
+//
+//    @Override
+//    public boolean testStudent(Student s) {
+//        return s.avgGrade < 8;
+//    }
+//}
+//class FindStudentsOverAge implements StudentChecks {
+//
+//    @Override
+//    public boolean testStudent(Student s) {
+//        return s.age > 25;
+//    }
+//}
+//class FindStudentsUnderAge implements StudentChecks {
+//
+//    @Override
+//    public boolean testStudent(Student s) {
+//        return s.age < 25;
+//    }
+//}
+//class FindStudentsBySex implements StudentChecks {
+//
+//    @Override
+//    public boolean testStudent(Student s) {
+//        return s.sex != 'м';
+//    }
+//}
+//class FindStudentMixCondition implements StudentChecks {
+//
+//    @Override
+//    public boolean testStudent(Student s) {
+//        return (s.avgGrade >  8.8 && s.age < 20 && s.sex == 'ж');
+//    }
+//}
